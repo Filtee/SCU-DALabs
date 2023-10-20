@@ -1,0 +1,4 @@
+/Users/chris/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Users/chris/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/chris/Documents/dalabs/Lab01 -B /Users/chris/Documents/dalabs/Lab01/cmake-build-debug
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/chris/Documents/dalabs/Lab01/cmake-build-debug
