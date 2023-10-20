@@ -11,11 +11,7 @@
   </component>
   <component name="CMakeRunConfigurationManager">
     <generated>
-      <config projectName="Lab01" targetName="gmock" />
       <config projectName="Lab01" targetName="Lab01" />
-      <config projectName="Lab01" targetName="gtest_main" />
-      <config projectName="Lab01" targetName="gmock_main" />
-      <config projectName="Lab01" targetName="gtest" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -24,346 +20,45 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad102ac0-80e7-40d1-843e-00e27dbbae0c" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/libgmock.a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/libgmock_main.a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/libgtest.a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/libgtest_main.a" afterDir="false" />
+    <list default="true" id="86bb9bb8-45b5-4070-b53c-8d021a9ceded" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/../111.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Lab01.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/query/cache-v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/query/cmakeFiles-v1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/query/codemodel-v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/query/toolchains-v1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-7186a54415c9263e3f2c.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-6048cd33b37cc2be814e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-b3f07a3ae4b9228f4e3d.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/directory-_deps.googletest-build-Debug-fa1b18db30f420365ea4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/directory-_deps.googletest-build.googlemock-Debug-31a54d377b384cc38fbe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/directory-_deps.googletest-build.googletest-Debug-a091d3d4c1720dfc82ff.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-10-20T10-32-28-0880.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-Lab01-Debug-ac1f2fcf27f1ca31d6d7.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-gmock-Debug-ae681c762729f34ca368.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-gmock_main-Debug-b3eae5b26b0d4331e0c0.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-gtest-Debug-8db259a44e45e6f3f9d0.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-gtest_main-Debug-16e2040cc32f53d59a52.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-692b59c6c9b5ab07adbc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab01.dir/src/Add.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab01.dir/src/gtest/testStack.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab01.dir/src/main.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Lab01" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-build/CTestTestfile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-build/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-build/googlemock/CTestTestfile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-build/googlemock/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-build/googletest/CMakeFiles/Export/0c08b8e77dd885bfe55a19a9659d9fc1/GTestTargets-debug.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-build/googletest/CMakeFiles/Export/0c08b8e77dd885bfe55a19a9659d9fc1/GTestTargets.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-build/googletest/CTestTestfile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-build/googletest/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-build/googletest/generated/GTestConfig.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-build/googletest/generated/GTestConfigVersion.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-build/googletest/generated/gmock.pc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-build/googletest/generated/gmock_main.pc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-build/googletest/generated/gtest.pc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-build/googletest/generated/gtest_main.pc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/.clang-format" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/.github/ISSUE_TEMPLATE/00-bug_report.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/.github/ISSUE_TEMPLATE/10-feature_request.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/.github/ISSUE_TEMPLATE/config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/.github/workflows/gtest-ci.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/BUILD.bazel" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/CONTRIBUTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/CONTRIBUTORS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/WORKSPACE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/ci/linux-presubmit.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/ci/macos-presubmit.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/docs/_config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/docs/_data/navigation.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/docs/_layouts/default.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/docs/_sass/main.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/docs/advanced.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/docs/assets/css/style.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/docs/community_created_documentation.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/docs/faq.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/docs/gmock_cheat_sheet.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/docs/gmock_cook_book.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/docs/gmock_faq.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/docs/gmock_for_dummies.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/docs/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/docs/pkgconfig.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/docs/platforms.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/docs/primer.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/docs/quickstart-bazel.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/docs/quickstart-cmake.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/docs/reference/actions.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/docs/reference/assertions.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/docs/reference/matchers.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/docs/reference/mocking.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/docs/reference/testing.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/docs/samples.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/cmake/gmock.pc.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/cmake/gmock_main.pc.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/docs/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/include/gmock/gmock-actions.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/include/gmock/gmock-cardinalities.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/include/gmock/gmock-function-mocker.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/include/gmock/gmock-matchers.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/include/gmock/gmock-more-actions.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/include/gmock/gmock-more-matchers.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/include/gmock/gmock-nice-strict.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/include/gmock/gmock-spec-builders.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/include/gmock/gmock.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/include/gmock/internal/custom/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/include/gmock/internal/custom/gmock-generated-actions.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/include/gmock/internal/custom/gmock-matchers.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/include/gmock/internal/custom/gmock-port.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/include/gmock/internal/gmock-internal-utils.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/include/gmock/internal/gmock-port.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/include/gmock/internal/gmock-pp.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/src/gmock-all.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/src/gmock-cardinalities.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/src/gmock-internal-utils.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/src/gmock-matchers.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/src/gmock-spec-builders.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/src/gmock.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/src/gmock_main.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/test/BUILD.bazel" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/test/gmock-actions_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/test/gmock-cardinalities_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/test/gmock-function-mocker_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/test/gmock-internal-utils_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/test/gmock-matchers-arithmetic_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/test/gmock-matchers-comparisons_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/test/gmock-matchers-containers_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/test/gmock-matchers-misc_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/test/gmock-matchers_test.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/test/gmock-more-actions_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/test/gmock-nice-strict_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/test/gmock-port_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/test/gmock-pp-string_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/test/gmock-pp_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/test/gmock-spec-builders_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/test/gmock_all_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/test/gmock_ex_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/test/gmock_leak_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/test/gmock_leak_test_.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/test/gmock_link2_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/test/gmock_link_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/test/gmock_link_test.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/test/gmock_output_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/test/gmock_output_test_.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/test/gmock_output_test_golden.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/test/gmock_stress_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/test/gmock_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googlemock/test/gmock_test_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/cmake/Config.cmake.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/cmake/gtest.pc.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/cmake/gtest_main.pc.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/cmake/internal_utils.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/cmake/libgtest.la.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/docs/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/gtest/gtest-assertion-result.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/include/gtest/gtest-death-test.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/gtest/gtest-death-test.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/include/gtest/gtest-matchers.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/gtest/gtest-matchers.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/include/gtest/gtest-message.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/gtest/gtest-message.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/include/gtest/gtest-param-test.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/gtest/gtest-param-test.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/include/gtest/gtest-printers.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/gtest/gtest-printers.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/include/gtest/gtest-spi.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/gtest/gtest-spi.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/include/gtest/gtest-test-part.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/gtest/gtest-test-part.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/include/gtest/gtest-typed-test.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/gtest/gtest-typed-test.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/include/gtest/gtest.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/gtest/gtest.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/gtest/gtest_pred_impl.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/include/gtest/gtest_prod.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/gtest/gtest_prod.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/include/gtest/internal/custom/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/include/gtest/internal/custom/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/include/gtest/internal/custom/gtest-port.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/gtest/internal/custom/gtest-port.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/include/gtest/internal/custom/gtest-printers.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/gtest/internal/custom/gtest-printers.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/include/gtest/internal/custom/gtest.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/gtest/internal/custom/gtest.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/gtest/internal/gtest-death-test-internal.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/include/gtest/internal/gtest-filepath.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/gtest/internal/gtest-filepath.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/gtest/internal/gtest-internal.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/include/gtest/internal/gtest-param-util.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/gtest/internal/gtest-param-util.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/include/gtest/internal/gtest-port-arch.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/gtest/internal/gtest-port-arch.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/include/gtest/internal/gtest-port.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/gtest/internal/gtest-port.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/include/gtest/internal/gtest-string.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/gtest/internal/gtest-string.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/gtest/internal/gtest-type-util.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/samples/prime_tables.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/samples/sample1.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/samples/sample1.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/samples/sample10_unittest.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/samples/sample1_unittest.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/samples/sample2.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/samples/sample2.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/samples/sample2_unittest.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/samples/sample3-inl.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/samples/sample3_unittest.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/samples/sample4.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/samples/sample4.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/samples/sample4_unittest.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/samples/sample5_unittest.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/samples/sample6_unittest.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/samples/sample7_unittest.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/samples/sample8_unittest.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/samples/sample9_unittest.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/src/gtest-all.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/src/gtest-assertion-result.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/src/gtest-death-test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/src/gtest-filepath.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/src/gtest-internal-inl.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/src/gtest-matchers.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/src/gtest-port.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/src/gtest-printers.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/src/gtest-test-part.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/src/gtest-typed-test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/src/gtest.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/src/gtest_main.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/BUILD.bazel" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-break-on-failure-unittest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-break-on-failure-unittest_.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-catch-exceptions-test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-catch-exceptions-test_.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-color-test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-color-test_.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-death-test-test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-death-test_ex_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-env-var-test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-env-var-test_.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-failfast-unittest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-failfast-unittest_.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-filepath-test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-filter-unittest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-filter-unittest_.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-global-environment-unittest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-global-environment-unittest_.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-json-outfiles-test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-json-output-unittest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-list-tests-unittest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-list-tests-unittest_.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-listener-test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-message-test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-options-test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-output-test-golden-lin.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-output-test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-output-test_.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-param-test-invalid-name1-test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-param-test-invalid-name1-test_.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-param-test-invalid-name2-test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-param-test-invalid-name2-test_.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-param-test-test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-param-test-test.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-param-test2-test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-port-test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-printers-test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-setuptestsuite-test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-setuptestsuite-test_.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-shuffle-test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-shuffle-test_.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-test-part-test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-throw-on-failure-test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-throw-on-failure-test_.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-uninitialized-test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/googletest-uninitialized-test_.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest-typed-test2_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest-typed-test_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest-typed-test_test.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest-unittest-api_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest_all_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest_assert_by_exception_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest_environment_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest_help_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest_help_test_.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest_json_test_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest_list_output_unittest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest_list_output_unittest_.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest_main_unittest.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest_no_test_unittest.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest_pred_impl_unittest.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest_premature_exit_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest_prod_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest_repeat_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest_skip_check_output_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest_skip_environment_check_output_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest_skip_in_environment_setup_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest_skip_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest_sole_header_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest_stress_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest_test_macro_stack_footprint_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest_test_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest_testbridge_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest_testbridge_test_.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest_throw_on_failure_ex_test.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest_unittest.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest_xml_outfile1_test_.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest_xml_outfile2_test_.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest_xml_outfiles_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest_xml_output_unittest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest_xml_output_unittest_.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/gtest_xml_test_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/production.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-src/googletest/test/production.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-subbuild/.ninja_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-subbuild/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-subbuild/CMakeFiles/3.26.4/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-subbuild/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-subbuild/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-subbuild/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-subbuild/CMakeFiles/googletest-populate.dir/Labels.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-subbuild/CMakeFiles/googletest-populate.dir/Labels.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-subbuild/CMakeFiles/rules.ninja" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-subbuild/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-subbuild/build.ninja" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-subbuild/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/5376968f6948923e2411081fd9372e71a59d8e77.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/download-googletest-populate.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/extract-googletest-populate.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-urlinfo.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/verify-googletest-populate.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/tmp/googletest-populate-cfgcmd.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/tmp/googletest-populate-mkdirs.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/libgtest.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/libgtest_main.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/gtest/gtest-assertion-result.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/gtest/gtest-death-test.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/gtest/gtest-matchers.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/gtest/gtest-message.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/gtest/gtest-param-test.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/gtest/gtest-printers.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/gtest/gtest-spi.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/gtest/gtest-test-part.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/gtest/gtest-typed-test.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/gtest/gtest.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/gtest/gtest_pred_impl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/gtest/gtest_prod.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/gtest/internal/custom/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/gtest/internal/custom/gtest-port.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/gtest/internal/custom/gtest-printers.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/gtest/internal/custom/gtest.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/gtest/internal/gtest-death-test-internal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/gtest/internal/gtest-filepath.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/gtest/internal/gtest-internal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/gtest/internal/gtest-param-util.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/gtest/internal/gtest-port-arch.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/gtest/internal/gtest-port.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/gtest/internal/gtest-string.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/gtest/internal/gtest-type-util.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libgmock.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libgmock_main.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libgtest.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libgtest_main.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gtest/testStack.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../殷浩杨的杰作" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -386,102 +81,205 @@
     <option name="minorVersion" value="2.2" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 6
+  &quot;associatedIndex&quot;: 8
 }</component>
-  <component name="ProjectId" id="2X1RnlmthtfzK5pEwCSPOPSxils" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2X1zH7si5ssKJaQxDr8lRmkfZVB" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.advertisement.text.has.clang-format": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/chris/Documents/dalabs/Lab01/include",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "CMakeSettings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/chris/Documents/dalabs/Test&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CMakeSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/include" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/lib" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/gtest" />
-      <recent name="$PROJECT_DIR$/src" />
-    </key>
   </component>
-  <component name="RunManager" selected="Google Test.Lab01">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Lab01" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Lab01" TARGET_NAME="Lab01" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Lab01" RUN_TARGET_NAME="Lab01" TEST_MODE="SUITE_TEST">
+  <component name="RunManager" selected="Doctest.Testing stack">
+    <configuration name="Testing stack" type="CMakeDoctestTestRunConfigurationType" factoryName="doctest Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Test" TARGET_NAME="Test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Test" RUN_TARGET_NAME="Test" TEST_METHOD="Testing stack" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="addCase1.should" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Lab01" TARGET_NAME="Lab01" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Lab01" RUN_TARGET_NAME="Lab01" TEST_CLASS="addCase1" TEST_METHOD="should" TEST_MODE="SUITE_TEST">
+    <configuration name="Test" type="CMakeListConfigurationType" factoryName="CMakeListConfigurationFactory" temporary="true">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-        <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lab01" type="CMakeListConfigurationType" factoryName="CMakeListConfigurationFactory" temporary="true">
+    <configuration name="doctest_with_main" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Test" TARGET_NAME="doctest_with_main" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Lab01" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="Lab01" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Autodetect">
+      <module name="Lab01" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="Lab01" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <module name="Lab01" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Twisted Trial">
+      <module name="Lab01" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <module name="Lab01" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <module name="Lab01" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="CMake 调试.Lab01" />
-      <item itemvalue="Google Test.Lab01" />
-      <item itemvalue="Google Test.addCase1.should" />
+      <item itemvalue="CMake 应用程序.doctest_with_main" />
+      <item itemvalue="CMake 调试.Test" />
+      <item itemvalue="Doctest.Testing stack" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="CMake 调试.Lab01" />
-        <item itemvalue="Google Test.addCase1.should" />
+        <item itemvalue="Doctest.Testing stack" />
+        <item itemvalue="CMake 调试.Test" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
-      <changelist id="ad102ac0-80e7-40d1-843e-00e27dbbae0c" name="更改" comment="" />
-      <created>1697794769304</created>
+      <changelist id="86bb9bb8-45b5-4070-b53c-8d021a9ceded" name="更改" comment="" />
+      <created>1697811282609</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1697794769304</updated>
-      <workItem from="1697794770439" duration="4277000" />
-      <workItem from="1697803870043" duration="117000" />
-      <workItem from="1697803990397" duration="71000" />
-      <workItem from="1697804065567" duration="168000" />
-      <workItem from="1697804236221" duration="867000" />
+      <updated>1697811282609</updated>
+      <workItem from="1697811283697" duration="955000" />
+      <workItem from="1697812488308" duration="446000" />
+      <workItem from="1697812938555" duration="244000" />
+      <workItem from="1697813273803" duration="66000" />
     </task>
-    <task id="LOCAL-00001" summary="Google Test 配置完成!&#10;Stack.h LStack.h Lin.h (Stack类) 完成!">
-      <option name="closed" value="true" />
-      <created>1697798498487</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1697798498487</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -492,14 +290,5 @@
     <isAutomaticCheckingOnLaunch value="false" />
     <isAutomaticFoundErrors value="true" />
     <isAutomaticFoundErrors value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Google Test 配置完成!&#10;Stack.h LStack.h Lin.h (Stack类) 完成!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Google Test 配置完成!&#10;Stack.h LStack.h Lin.h (Stack类) 完成!" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>
