@@ -1,12 +1,9 @@
-//
-// Created by Christopher on 2023/10/20.
-//
-
 #ifndef LAB01_LSTACK_H
 #define LAB01_LSTACK_H
 
-#include "stack.h"
+#include "Stack.h"
 #include "Link.h"
+#include "assert.h"
 
 #define DEFAULT_SIZE 0
 
@@ -22,7 +19,7 @@ public:
     // Constructor
     LStack(int sz = DEFAULT_SIZE) {
         top = nullptr;
-        size = 0;
+        size = sz;
     }
 
     // Destructor
@@ -47,7 +44,10 @@ public:
 
     // Remove "it" from stack
     E pop() {
-//        static_assert(top != nullptr, "Stack is empty");
+        if (top == nullptr) {
+            assert("栈已空");
+        }
+
         E it = top->element;
         Link <E> *ltemp = top->next;
         delete top;
@@ -58,7 +58,10 @@ public:
 
     // Return top value
     const E &topValue() const {
-//        static_assert(top != 0, "Stack is empty");
+        if (top == nullptr) {
+            assert("栈已空");
+        }
+
         return top->element;
     }
 

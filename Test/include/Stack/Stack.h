@@ -1,11 +1,7 @@
-//
-// Created by Christopher on 2023/10/20.
-//
-
 #ifndef LAB01_STACK_H
 #define LAB01_STACK_H
 
-// Stack abtract class
+// Stack abstract class
 template<typename E>
 class Stack {
 private:

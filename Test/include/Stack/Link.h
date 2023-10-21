@@ -1,7 +1,3 @@
-//
-// Created by Christopher on 2023/10/20.
-//
-
 #ifndef LAB01_LINK_H
 #define LAB01_LINK_H
 
