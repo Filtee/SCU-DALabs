@@ -4,7 +4,10 @@
 #include "doctest/doctest.h"
 #include "Calc/IntelliCalc.h"
 
-    TEST_CASE("TestIntelliCalc.h") {
+/*
+ * TODO: 聪明算法 {IntelliCalc.h} 单元测试
+ */
+TEST_CASE("TestIntelliCalc.h") {
     SUBCASE("Test IntelliCalc.h with integers") {
         string a = "356739701237489999238175681203";
         string b = "909871854780841705718882133";

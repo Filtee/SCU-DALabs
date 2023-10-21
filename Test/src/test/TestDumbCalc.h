@@ -6,7 +6,10 @@ using namespace std;
 
 #include "Calc/Calc.h"
 
-    TEST_CASE("Test DumbCalc") {
+/*
+ * TODO: 愚蠢算法 {Calc.h} 单元测试
+ */
+TEST_CASE("Test DumbCalc") {
     SUBCASE("Test DumbCalc with integers") {
         int a = 432135;
         int b = 111;
@@ -20,10 +23,10 @@ using namespace std;
             CHECK_EQ(to_string(a * b), Calc::mul(to_string(a), to_string(b)));
         }
         SUBCASE("Test func {fDev}") {
-            CHECK_EQ(to_string((int) a / b), Calc::dev(to_string(a), to_string(b)));
+            CHECK_EQ(to_string((int) a / b), Calc::fDev(to_string(a), to_string(b)));
         }
         SUBCASE("Test func {dev}") {
-            CHECK_EQ(to_string(a / b), Calc::dev(to_string(a), to_string(b)));
+            CHECK_EQ(to_string(a / b), Calc::fDev(to_string(a), to_string(b)));
         }
     }
 
