@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.26)
-project(Lab01)
+project(Test)
 
 # C++17 编译标准
 set(CMAKE_CXX_STANDARD 17)
@@ -12,32 +12,20 @@ include_directories(${ROOT_DIR}/include)
 link_directories(${ROOT_DIR}/lib)
 # 添加源文件
 aux_source_directory(${ROOT_DIR}/src DIR_SRC)
-aux_source_directory(${ROOT_DIR}/src/gtest DIR_GTEST)
-aux_source_directory(${ROOT_DIR}/src/gmock DIR_GMOCK)
+aux_source_directory(${ROOT_DIR}/src/test DIR_TEST)
 
-## 拉取 Google Test
-#include(FetchContent)
-#FetchContent_Declare(
-#        googletest
-#        URL https://github.com/google/googletest/archive/5376968f6948923e2411081fd9372e71a59d8e77.zip
-#)
-## For Windows: Prevent overriding the parent project's compiler/linker settings
-#set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
-#FetchContent_MakeAvailable(googletest)
-
-# 需要编译的源文件
-add_executable(Lab01
+add_executable(Test
         ${DIR_SRC}
-        ${DIR_GTEST}
-        ${DIR_GMOCK}
-)
-## 链接 Google Test 外部库
-#target_link_libraries(Lab01 gtest_main)
-target_link_libraries(Lab01
-        libgtest_main.a
-        libgtest.a
-        libgmock_main.a
-        libgmock.a
+        ${DIR_TEST}
 )
 
-add_test(NAME example_test COMMAND example)
+include(FetchContent)
+FetchContent_Declare(
+        doctest
+        GIT_REPOSITORY https://github.com/doctest/doctest.git
+        GIT_TAG v2.4.9
+        GIT_SHALLOW TRUE
+)
+FetchContent_MakeAvailable(doctest)
+
+target_link_libraries(Test doctest_with_main)
