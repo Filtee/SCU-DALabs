@@ -4,6 +4,7 @@
 #include "string"
 using namespace std;
 
+#include "doctest/doctest.h"
 #include "Calc/Calc.h"
 
 /*

@@ -4,7 +4,7 @@
 #include "string"
 using namespace std;
 
-#include "Stack/LStack.h"
+#include "ADT/Stack.h"
 #include "Calc/Calc.h"
 #include "ReversePolish.h"
 
@@ -14,7 +14,7 @@ using namespace std;
  *  工作原理:
  *  1. 调用 {formula->store(str)} 来存储输入的公式
  *      1> 输入的字符串将先被转换成逆波兰式(以Stack的形式返回)后, 存储为私有空间中的 {element}
- *          若{element}原先不为null, 则先销毁先前存储的{Stack}, 再将得到的逆波兰式栈存入
+ *          若{element}原先不为null, 则先销毁先前存储的{ADT}, 再将得到的逆波兰式栈存入
  *      2> 存入后进行计算, 运算过程交给{Calc.h}或{IntelliCalc.h}头文件中包含的计算公式, 调
  *          用语法如{Calc::Add(strA, strB)}; 输入的两个参数均为{string}类型, 返回的结果也
  *          为{string}类型
@@ -23,7 +23,7 @@ using namespace std;
 class Formula {
 private:
     // 存储的逆波兰式
-    LStack<string> *elements;
+    Stack<string> *elements;
     // 计算得到的结果
     string result;
 
@@ -45,7 +45,7 @@ public:
     // Constructor
     Formula(string str = nullptr) {
         store(str);
-        elements = new LStack<string>();
+        elements = new Stack<string>();
     }
 
     // Destructor
@@ -66,7 +66,6 @@ public:
         if (elements != nullptr) {
             delete elements;
         }
-        elements = ReversePolish::convert(str);
     }
 
     /*

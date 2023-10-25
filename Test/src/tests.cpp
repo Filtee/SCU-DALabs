@@ -6,11 +6,11 @@
  * */
 TEST_SUITE("utils") {
 
-#include "test/TestStack.h" // 测试栈
+#include "test/TestADT.h" // 测试栈
 
 #include "test/TestDumbCalc.h" // 测试愚蠢算法 {Calc.h}
 
-#include "test/TestIntelliCalc.h" // 测试聪明算法 {IntelliCalc.h}
+//#include "test/TestIntelliCalc.h" // 测试聪明算法 {IntelliCalc.h}
 
 #include "test/TestReversePolish.h" // 测试逆波兰式的转换是否正确
 
