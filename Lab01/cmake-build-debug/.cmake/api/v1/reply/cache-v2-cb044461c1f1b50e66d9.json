@@ -819,7 +819,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "Test"
+			"value" : "Lab01"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION",
@@ -1298,7 +1298,7 @@
 			"value" : "/opt/homebrew/bin/git"
 		},
 		{
-			"name" : "Test_BINARY_DIR",
+			"name" : "Lab01_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1310,7 +1310,7 @@
 			"value" : "/Users/chris/Documents/dalabs/Lab01/cmake-build-debug"
 		},
 		{
-			"name" : "Test_IS_TOP_LEVEL",
+			"name" : "Lab01_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1322,7 +1322,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "Test_SOURCE_DIR",
+			"name" : "Lab01_SOURCE_DIR",
 			"properties" : 
 			[
 				{

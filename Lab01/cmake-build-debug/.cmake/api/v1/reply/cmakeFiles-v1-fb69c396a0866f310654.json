@@ -198,8 +198,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/Users/chris/Documents/dalabs/Test/cmake-build-debug",
-		"source" : "/Users/chris/Documents/dalabs/Test"
+		"build" : "/Users/chris/Documents/dalabs/Lab01/cmake-build-debug",
+		"source" : "/Users/chris/Documents/dalabs/Lab01"
 	},
 	"version" : 
 	{

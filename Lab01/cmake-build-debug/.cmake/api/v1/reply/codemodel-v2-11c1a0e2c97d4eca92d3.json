@@ -52,7 +52,7 @@
 					[
 						0
 					],
-					"name" : "Test",
+					"name" : "Lab01",
 					"targetIndexes" : 
 					[
 						0
@@ -75,15 +75,15 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "Test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Test-Debug-88a31aafcd30bf5fd64f.json",
-					"name" : "Test",
+					"id" : "Lab01::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Lab01-Debug-d50cb9274182a1e77ede.json",
+					"name" : "Lab01",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "doctest_with_main::@de8c2d1415f8a28c2e63",
-					"jsonFile" : "target-doctest_with_main-Debug-0853e926e85181aa4f93.json",
+					"jsonFile" : "target-doctest_with_main-Debug-c49aeba17777ca0b9a93.json",
 					"name" : "doctest_with_main",
 					"projectIndex" : 1
 				}
@@ -93,8 +93,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/chris/Documents/dalabs/Test/cmake-build-debug",
-		"source" : "/Users/chris/Documents/dalabs/Test"
+		"build" : "/Users/chris/Documents/dalabs/Lab01/cmake-build-debug",
+		"source" : "/Users/chris/Documents/dalabs/Lab01"
 	},
 	"version" : 
 	{

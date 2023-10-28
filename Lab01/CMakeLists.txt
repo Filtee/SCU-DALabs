@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.26)
-project(Test)
+project(Lab01)
 
 # C++17 编译标准
 set(CMAKE_CXX_STANDARD 17)
@@ -12,7 +12,7 @@ include_directories(${ROOT_DIR}/include)
 aux_source_directory(${ROOT_DIR}/src DIR_SRC)
 aux_source_directory(${ROOT_DIR}/src/test DIR_TEST)
 
-add_executable(Test
+add_executable(Lab01
         ${DIR_SRC}
         ${DIR_TEST}
 )
@@ -26,4 +26,4 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(doctest)
 
-target_link_libraries(Test doctest_with_main)
+target_link_libraries(Lab01 doctest_with_main)
