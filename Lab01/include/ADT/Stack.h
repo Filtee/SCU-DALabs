@@ -1,7 +1,6 @@
 #ifndef LAB01_LSTACK_H
 #define LAB01_LSTACK_H
 
-#include "Stack.h"
 #include "Link.h"
 #include "assert.h"
 
@@ -9,7 +8,7 @@
 
 // Linked stack implementation
 template<typename E>
-class LStack : public Stack<E> {
+class Stack {
 private:
     // Pointer to first element
     Link <E> *top;
@@ -17,13 +16,13 @@ private:
     int size;
 public:
     // Constructor
-    LStack(int sz = DEFAULT_SIZE) {
+    Stack(int sz = DEFAULT_SIZE) {
         top = nullptr;
         size = sz;
     }
 
     // Destructor
-    ~LStack() { clear(); }
+    ~Stack() { clear(); }
 
     // Reinitialize
     void clear() {

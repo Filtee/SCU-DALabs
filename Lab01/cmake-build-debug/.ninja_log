@@ -1,6 +1,0 @@
-# ninja log v5
-0	29	1697813385414683101	CMakeFiles/Test.dir/src/main.cpp.o	af0ad2c3d8fe134c
-1	344	1697813385727881073	CMakeFiles/Test.dir/src/test/testStack.cpp.o	a6724936172f177d
-1	955	1697813386338288308	_deps/doctest-build/CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.o	2b2ded97b4e98aa1
-956	979	1697813386366602000	_deps/doctest-build/libdoctest_with_main.a	87d9485ea4365bba
-980	1012	1697813386397558311	Test	1363fdacc6795939

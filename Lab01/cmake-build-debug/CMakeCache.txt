@@ -146,7 +146,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Test
+CMAKE_PROJECT_NAME:STATIC=Lab01
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=2.4.9
@@ -261,13 +261,13 @@ FETCHCONTENT_UPDATES_DISCONNECTED_DOCTEST:BOOL=OFF
 GIT_EXECUTABLE:FILEPATH=/opt/homebrew/bin/git
 
 //Value Computed by CMake
-Test_BINARY_DIR:STATIC=/Users/chris/Documents/dalabs/Lab01/cmake-build-debug
+Lab01_BINARY_DIR:STATIC=/Users/chris/Documents/dalabs/Lab01/cmake-build-debug
 
 //Value Computed by CMake
-Test_IS_TOP_LEVEL:STATIC=ON
+Lab01_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-Test_SOURCE_DIR:STATIC=/Users/chris/Documents/dalabs/Lab01
+Lab01_SOURCE_DIR:STATIC=/Users/chris/Documents/dalabs/Lab01
 
 //Value Computed by CMake
 doctest_BINARY_DIR:STATIC=/Users/chris/Documents/dalabs/Lab01/cmake-build-debug/_deps/doctest-build
