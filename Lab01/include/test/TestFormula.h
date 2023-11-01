@@ -2,7 +2,7 @@
 #define TEST_TESTFORMULA_H
 
 #include "doctest/doctest.h"
-#include "Formula.h"
+#include "formula/Formula.h"
 
 /*
  * TODO: 整个式子计算结果单元测试

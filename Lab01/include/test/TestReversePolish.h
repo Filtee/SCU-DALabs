@@ -1,7 +1,7 @@
 #ifndef TEST_TESTREVERSEPOLISH_H
 #define TEST_TESTREVERSEPOLISH_H
 
-#include "ReversePolish.h"
+#include "formula/ReversePolish.h"
 #include "doctest/doctest.h"
 #include "ADT/Queue.h"
 
@@ -14,7 +14,7 @@ TEST_CASE("Test ReversePolish.h") {
         ReversePolish *rp = new ReversePolish();
         string actual = rp->toString(a);
         string expect;
-        expect.append("-162+3*+");
+        expect.append("n-1n6n2o+n3o*o+");
 
         CHECK_EQ(expect, actual);
     }
@@ -24,7 +24,7 @@ TEST_CASE("Test ReversePolish.h") {
         ReversePolish *rp = new ReversePolish();
         string actual = rp->toString(a);
         string expect;
-        expect.append("-12-23-62+^/3*");
+        expect.append("n-12n-23n-6n2o+o^o/n3o*");
 
         CHECK_EQ(expect, actual);
     }
@@ -34,7 +34,7 @@ TEST_CASE("Test ReversePolish.h") {
         ReversePolish *rp = new ReversePolish();
         string actual = rp->toString(a);
         string expect;
-        expect.append("-1948784/112--6532+45/+");
+        expect.append("n-1948n784o/n112o-n-65n32o+n45o/o+");
 
         CHECK_EQ(expect, actual);
     }

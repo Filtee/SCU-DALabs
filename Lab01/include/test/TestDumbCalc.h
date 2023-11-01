@@ -5,10 +5,10 @@
 using namespace std;
 
 #include "doctest/doctest.h"
-#include "Calc/Calc.h"
+#include "calc/Calc.h"
 
 /*
- * TODO: 愚蠢算法 {Calc.h} 单元测试
+ * TODO: 愚蠢算法 {calc.h} 单元测试
  */
 TEST_CASE("Test DumbCalc") {
     SUBCASE("Test DumbCalc with integers") {

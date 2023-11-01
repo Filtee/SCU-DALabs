@@ -7,15 +7,18 @@ using namespace std;
 
 /*
  * TODO: 逆波兰式转换类
- *  不需要实例化
+ *  需要实例化!
  *  工作原理:
- *      通过调用{ReversePolish::convert(str)}获得由输入的字符串{str}
- *      转换而来的存储式子逆波兰式的栈;
+ *      实例化为之后, 通过调用{rp.convert(str)}获得由输入的字符串{str}
+ *          转换而来的存储式子逆波兰式的栈, {rp}为实例化后的变量名;
  *      其中逆波兰式中所有元素均为{string}类型, 仅含一个字符的运算符, 诸
- *      如:+ - * / 等, 均存放为{string}类型
+ *          如: + - * / 等, 均存放为{string}类型
+ *      逆波兰式中所有{string}的第一个字符为标签位, 标示该条{string}为数
+ *          字 or 运算符 如: str.at(0) == 'n' // str.at(0) == 'o'
  */
 class ReversePolish {
 private:
+    // 运算符结构体 {char}保存运算符 {priority}保存运算符优先级
     typedef struct {
         char op;
         int priority;
@@ -32,9 +35,9 @@ private:
     Stack<Operator> *opStack;
 
     // 保存上一个{opStack}中弹出来的上一个{char}
-    char lastChar;
+    bool lastCharIsNum;
 
-    /* 初始化所有的栈和队列 */
+    // 初始化所有的栈和队列
     void initialize(const string &str) {
         formulaQueue = new Queue<string>();
         opStack = new Stack<Operator>();
@@ -50,10 +53,7 @@ private:
         return ch >= '0' && ch <= '9';
     }
 
-    /*
-     * 解决数字
-     * 如果下一个字符是数字 则将其之后的所有数字字符放入str中
-     */
+    // 解决数字 如果下一个字符是数字 则将其之后的所有数字字符放入str中
     void dealWithNum(char op = 0) {
         string str;
 
@@ -61,21 +61,41 @@ private:
         if (op) {
             str.push_back(op);
         }
-        // 将本次弹出来的字符保存到{lastChar}中
-        lastChar = charStack->topValue();
         // 将接下来的数字符号都保存到{str}中
         while (charStack->length() != 0
                && isNum(charStack->topValue())) {
             str.push_back(charStack->pop());
         }
+
+        // 在第0位插入字符n 作为标记 后保存到{formulaQueue}中
+        str.insert(0, "n");
         formulaQueue->add(str);
+        // 标记本次处理的字符位数字
+        lastCharIsNum = true;
     }
 
-    /*
-     * 解决运算符
-     * 如果下一个字符是运算符 判断运算符的类型
-     * 并以此判断需要使用的对应的处理方式
-     */
+    // 为运算符附加运算优先级
+    void setPriority(Operator *opStruct) {
+        // 根据输入的运算符结构体存储的运算符类型 附加对应的运算优先级
+        switch (opStruct->op) {
+            case '+':
+            case '-':
+                opStruct->priority = 1;
+                break;
+            case '*':
+            case '/':
+                opStruct->priority = 2;
+                break;
+            case '^':
+                opStruct->priority = 3;
+                break;
+            default:
+                assert("非法输入!");
+        };
+    }
+
+    // 解决运算符
+    // 如果下一个字符是运算符 判断运算符的类型 使用对应的处理方式
     void dealWithOperator() {
         // 将弹出字符栈中的下一个字符保存到结构体中
         Operator opStruct;
@@ -91,73 +111,62 @@ private:
             // 将运算符栈中的所有运算符放入式子队列 直至遇到前括号
             dealWithBracket();
 
+        } else if (!lastCharIsNum && (opStruct.op == '+' || '-')) {
+            // 如果为正负号 调用数字处理方式
+            dealWithNum(opStruct.op);
+            return;
+
         } else {
-            /*
-             * TODO: 填充更多的运算符 && 完成对于负号的处理
-             *  如果为运算符 根据运算符类型为其附加运算优先级
-             */
-            switch (opStruct.op) {
-                case '+':
-                case '-':
-                    if (isNum(lastChar)) {
-                        // 上一个处理的字符为数字 则不为正负号 而是加减二元运算符
-                        opStruct.priority = 1;
-                    } else {
-                        // 上一个处理的字符不为数字 则为正负号 与接下来的数字一同保存
-                        dealWithNum(opStruct.op);
-                        return;
-                    }
-                    break;
-                case '*':
-                case '/':
-                    opStruct.priority = 2;
-                    break;
-                case '^':
-                    opStruct.priority = 3;
-                    break;
-                default:
-                    assert("非法输入!");
-            };
-
-            // 运算符优先级高于栈内的运算符 => 入栈 (或栈空)
-            // 否则 从堆栈中pop所有优先级更高或一样的运算符(或直到括号) 再让当前运算符入栈
-            string str;
-            while (opStack->length() != 0 &&
-                   opStruct.priority <= opStack->topValue().priority) {
-                str = "";
-                str.push_back(opStack->pop().op);
-                formulaQueue->add(str);
-            }
-
-            // 将生成的结构体压入运算符栈中
-            opStack->push(opStruct);
-            // 将本次弹出来的字符保存到{lastChar}中
-            lastChar = opStruct.op;
+            // 设置运算符优先级
+            setPriority(&opStruct);
+            // 保存这个新运算符
+            insertOperator(opStruct);
         }
     }
 
-    // 操作符
+    // 保存新的运算符
+    void insertOperator(Operator &opStruct) {
+        // 运算符优先级高于栈内的运算符 => 入栈 (或栈空)
+        // 否则 从堆栈中pop所有优先级更高或一样的运算符(或直到括号) 再让当前运算符入栈
+        while (opStack->length() != 0 &&
+               opStruct.priority <= opStack->topValue().priority) {
+            string str;
+            str.push_back(opStack->pop().op);
+            // 在第0位插入字符o 作为标记 后保存到{formulaQueue}中
+            str.insert(0, "o");
+            formulaQueue->add(str);
+        }
+
+        // 将生成的结构体压入运算符栈中
+        opStack->push(opStruct);
+        // 标记本次处理的不是数字
+        lastCharIsNum = false;
+    }
+
+    // 解决括号 将运算符栈中的所有运算符放入式子队列 直至遇到前括号
+    void dealWithBracket() {
+        // 如果没有遇到前括号 将遇到的运算符放入式子队列
+        while (opStack->topValue().op != '(') {
+            string str;
+            str.push_back(opStack->pop().op);
+            // 在第0位插入字符o 作为标记 后保存到{formulaQueue}中
+            str.insert(0, "o");
+            formulaQueue->add(str);
+        }
+        // pop掉运算符栈中的前括号
+        opStack->pop();
+    }
+
+    // 若{charStack}已经读完 将余下的操作符全部放入{formulaQueue}中
     void clearOperator() {
         string str;
         while (opStack->length() != 0) {
             str = "";
             str.push_back(opStack->pop().op);
+            // 在第0位插入字符o 作为标记 后保存到{formulaQueue}中
+            str.insert(0, "o");
             formulaQueue->add(str);
         }
-    }
-
-    // 解决括号
-    // 将运算符栈中的所有运算符放入式子队列 直至遇到前括号
-    void dealWithBracket() {
-        string str;
-        // 如果没有遇到前括号 将遇到的运算符放入式子队列
-        while (opStack->topValue().op != '(') {
-            str = "";
-            str.push_back(opStack->pop().op);
-            formulaQueue->add(str);
-        }
-        // pop掉运算符栈中的前括号
-        opStack->pop();
     }
 
     // 将式子队列转换为包含逆波兰式的栈返回
@@ -168,6 +177,7 @@ private:
         }
         return ret;
     }
+
 
 public:
     /*
