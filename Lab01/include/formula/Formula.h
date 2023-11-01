@@ -2,6 +2,7 @@
 #define TEST_FORMULA_H
 
 #include "string"
+#include "iostream"
 using namespace std;
 
 #include "ADT/Stack.h"
@@ -25,11 +26,7 @@ private:
     // 存储的逆波兰式
     Stack<string> *formula;
     // 计算得到的结果
-    string result;
-
-    bool isNum(char ch) {
-        return '0' < ch && ch < '9';
-    }
+    string result = "";
 
     /*
      * TODO: 调用逆波兰式进行计算
@@ -38,8 +35,57 @@ private:
      *  类型, 返回的结果也为{string}类型
      */
     void proceed() {
-
+        //定义一个用来存储运算过程的栈
+        Stack<string> *tempResult = new Stack<string>;
+        while(formula->length() != 0){
+            string str = formula->topValue();
+            //判断该字符串为数字还是操作符并进行操作
+            switch(NorO(str)){
+                case 1:
+                    str.erase(0,1);
+                    tempResult->push(str);
+                    break;
+                default:
+                    //遇到符号，就从栈中提数
+                    //由于逆波兰式中前两个数（对应这里的字符串）一定是数，故不用担心提不出两个数的问题
+                    string num1 = tempResult->topValue();
+                    formula->pop();
+                    string num2 = tempResult->topValue();
+                    str.erase(0,1);
+                    if(str == "+"){
+                        tempResult->push(Calc::add(num1,num2));
+                    }else if(str == "-"){
+                        tempResult->push(Calc::sub(num2,num1));
+                    }else if(str == "*"){
+                        tempResult->push(Calc::mul(num1,num2));
+                    }else if(str == "/"){
+                        //除法运算这里暂时选用精度更高的dev()，保证后续不出错
+                        tempResult->push(Calc::dev(num2,num1));
+                    }else if(str == "%"){
+                        tempResult->push(Calc::mod(num2,num1));
+                    }else if(str == "&"){
+                        //虽然Calc中定义的power方法不仅限于开方，但由于更高阶的开次方键盘上暂时没有对应的符号，故此处只做了开方
+                        tempResult->push(Calc::power(num1,"2"));
+                    }else if(str == "^"){
+                        tempResult->push(Calc::power(num2,num1));
+                    }else if(str == "!"){
+                        tempResult->push(Calc::fac(num1));
+                    }else{
+                        cout<<"非法字符"<<endl;
+                    }
+            }
+        }
+        //弹出栈里最后仅剩的string，即运算结果
+        result.append(tempResult->pop());
     }
+
+    //如果是n，返回1，说明接下来的部分是数字；
+    //如果不是n,是o，返回0，说明接下来的部分是运算符
+    int NorO(string str){
+        return  str[0] == 'n';
+    };
+
+
 
 public:
     // Constructor
