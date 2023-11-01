@@ -12,7 +12,7 @@ class Stack {
 private:
     // Pointer to first element
     Link <E> *top;
-    // Number of elements
+    // Number of formula
     int size;
 public:
     // Constructor

@@ -7,9 +7,9 @@ using namespace std;
 
 /*
  * TODO: 逆波兰式转换类
- *  需要实例化!
+ *  不需要实例化!
  *  工作原理:
- *      实例化为之后, 通过调用{rp.convert(str)}获得由输入的字符串{str}
+ *      通过调用{ReversePolish::convert(str)}获得由输入的字符串{str}
  *          转换而来的存储式子逆波兰式的栈, {rp}为实例化后的变量名;
  *      其中逆波兰式中所有元素均为{string}类型, 仅含一个字符的运算符, 诸
  *          如: + - * / 等, 均存放为{string}类型
@@ -178,13 +178,11 @@ private:
         return ret;
     }
 
-
-public:
     /*
      * 将输入的字符串转换成逆波兰式
      *  返回值为{LStack<string>*}类型, 即存储逆波兰式的栈的指针
      */
-    Stack<string> *convert(const string &str) {
+    Stack<string> *getStack(const string &str) {
         initialize(str);
 
         while (charStack->length() != 0) {
@@ -204,13 +202,24 @@ public:
     }
 
     string toString(const string &str) {
-        Stack<string> *stack = convert(str);
+        Stack<string> *stack = getStack(str);
         // 转换为{string}类型
         string ret;
         while (stack->length() != 0) {
             ret.append(stack->pop());
         }
         return ret;
+    }
+
+public:
+    static Stack<string> *convert(const string &str) {
+        ReversePolish *rp = new ReversePolish();
+        return rp->convert(str);
+    }
+
+    static string convertToString(const string &str) {
+        ReversePolish *rp = new ReversePolish();
+        return rp->toString(str);
     }
 };
 

@@ -23,7 +23,7 @@ using namespace std;
 class Formula {
 private:
     // 存储的逆波兰式
-    Stack<string> *elements;
+    Stack<string> *formula;
     // 计算得到的结果
     string result;
 
@@ -45,7 +45,7 @@ public:
     // Constructor
     Formula(string str = nullptr) {
         store(str);
-        elements = new Stack<string>();
+        formula = new Stack<string>();
     }
 
     // Destructor
@@ -54,7 +54,7 @@ public:
     }
 
     void clear() {
-        elements->clear();
+        formula->clear();
         result = nullptr;
     }
 
@@ -62,10 +62,10 @@ public:
      * 存储转换后得到的逆波兰式
      */
     void store(string str) {
-        // 将输入的str转换成逆波兰式存储
-        if (elements != nullptr) {
-            delete elements;
-        }
+        delete formula;
+        formula = ReversePolish::convert(str);
+        // 运算
+        proceed();
     }
 
     /*

@@ -11,30 +11,27 @@
 TEST_CASE("Test ReversePolish.h") {
     SUBCASE("Test1") {
         string a = "-1 + (6 + 2) * 3";
-        ReversePolish *rp = new ReversePolish();
-        string actual = rp->toString(a);
-        string expect;
-        expect.append("n-1n6n2o+n3o*o+");
+
+        string actual = ReversePolish::convertToString(a);
+        string expect = "n-1n6n2o+n3o*o+";
 
         CHECK_EQ(expect, actual);
     }
 
     SUBCASE("Test2") {
         string a = "-12/ (-23) ^ (-6 + 2)*3";
-        ReversePolish *rp = new ReversePolish();
-        string actual = rp->toString(a);
-        string expect;
-        expect.append("n-12n-23n-6n2o+o^o/n3o*");
+
+        string actual = ReversePolish::convertToString(a);
+        string expect = "n-12n-23n-6n2o+o^o/n3o*";
 
         CHECK_EQ(expect, actual);
     }
 
     SUBCASE("Test3") {
         string a = "-1948/784-112+(-65 + 32) /45";
-        ReversePolish *rp = new ReversePolish();
-        string actual = rp->toString(a);
-        string expect;
-        expect.append("n-1948n784o/n112o-n-65n32o+n45o/o+");
+
+        string actual = ReversePolish::convertToString(a);
+        string expect = "n-1948n784o/n112o-n-65n32o+n45o/o+";
 
         CHECK_EQ(expect, actual);
     }
