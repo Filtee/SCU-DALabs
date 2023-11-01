@@ -2,6 +2,7 @@
 #define TEST_CALC_H
 
 #include "string"
+#include "cmath"
 using namespace std;
 
 /*
@@ -63,17 +64,31 @@ public:
 
     // TODO: 开根号(二阶/三阶/...)
     static string root(const string &strA, const string &strB) {
-        return nullptr;
+        double numA=stod(strA);
+        double numB=stod(strB);
+
+        return to_string(pow(numA,1/numB));
     }
 
     // TODO: 幂乘运算
-    static string pow(const string &strA, const string &strB) {
-        return nullptr;
+    static string power(const string &strA, const string &strB) {
+        double numA=stod(strA);
+        double numB=stod(strB);
+        return to_string(pow(numA,numB));
     }
 
     // TODO: 阶乘运算
     static string fac(const string &strA) {
-        return nullptr;
+        int numA=stoi(strA);
+        long long ans=1;
+        if(numA<=0){
+            throw "This number is not positive";
+        }
+        for(int i=1;i<numA;i++){
+            ans*=i;
+        }
+
+        return to_string(ans);
     }
 };
 
