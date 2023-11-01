@@ -51,14 +51,14 @@ build cmake_object_order_depends_target_Lab01: phony || cmake_object_order_depen
 
 build CMakeFiles/Lab01.dir/src/main.cpp.o: CXX_COMPILER__Lab01_unscanned_Debug /Users/chris/Documents/dalabs/Lab01/src/main.cpp || cmake_object_order_depends_target_Lab01
   DEP_FILE = CMakeFiles/Lab01.dir/src/main.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk
   INCLUDES = -I/Users/chris/Documents/dalabs/Lab01/include -I/Users/chris/Documents/dalabs/Lab01/cmake-build-debug/_deps/doctest-src
   OBJECT_DIR = CMakeFiles/Lab01.dir
   OBJECT_FILE_DIR = CMakeFiles/Lab01.dir/src
 
 build CMakeFiles/Lab01.dir/src/tests.cpp.o: CXX_COMPILER__Lab01_unscanned_Debug /Users/chris/Documents/dalabs/Lab01/src/tests.cpp || cmake_object_order_depends_target_Lab01
   DEP_FILE = CMakeFiles/Lab01.dir/src/tests.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk
   INCLUDES = -I/Users/chris/Documents/dalabs/Lab01/include -I/Users/chris/Documents/dalabs/Lab01/cmake-build-debug/_deps/doctest-src
   OBJECT_DIR = CMakeFiles/Lab01.dir
   OBJECT_FILE_DIR = CMakeFiles/Lab01.dir/src
@@ -162,7 +162,7 @@ build cmake_object_order_depends_target_doctest_with_main: phony || _deps/doctes
 build _deps/doctest-build/CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.o: CXX_COMPILER__doctest_with_main_unscanned_Debug /Users/chris/Documents/dalabs/Lab01/cmake-build-debug/_deps/doctest-src/doctest/parts/doctest.cpp || cmake_object_order_depends_target_doctest_with_main
   DEFINES = -DDOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
   DEP_FILE = _deps/doctest-build/CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.o.d
-  FLAGS = -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk
   INCLUDES = -I/Users/chris/Documents/dalabs/Lab01/include -I/Users/chris/Documents/dalabs/Lab01/cmake-build-debug/_deps/doctest-src
   OBJECT_DIR = _deps/doctest-build/CMakeFiles/doctest_with_main.dir
   OBJECT_FILE_DIR = _deps/doctest-build/CMakeFiles/doctest_with_main.dir/doctest/parts

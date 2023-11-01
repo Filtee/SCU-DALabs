@@ -2,7 +2,7 @@
 #define TEST_TESTINTELLICALC_H
 
 #include "doctest/doctest.h"
-#include "Calc/IntelliCalc.h"
+#include "calc/IntelliCalc.h"
 
 /*
  * TODO: 聪明算法 {IntelliCalc.h} 单元测试

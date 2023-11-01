@@ -12,7 +12,7 @@ class Queue {
 private:
     // Pointer to first element
     DLink<E> *head = new DLink<E>();
-    // Number of elements
+    // Number of formula
     int size;
 public:
     // Constructor
