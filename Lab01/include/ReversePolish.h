@@ -21,16 +21,22 @@ private:
         int priority;
     } Operator;
 
-    Queue<string> *numQueue;
+    // 式子队列 保存转换出来的逆波兰式 {string}
+    Queue<string> *formulaQueue;
 
+    // 字符栈 将以{string}类型输入的字符串的每个字符放入栈中
     Stack<char> *charStack;
 
+    // 运算符栈 保存所有{charStack}中的运算符
+    // {Operator}结构体形式 {char}成员保存运算符 {int}成员保存优先级
     Stack<Operator> *opStack;
 
+    // 保存上一个{opStack}中弹出来的上一个{char}
+    char lastChar;
 
-    /* 初始化 */
+    /* 初始化所有的栈和队列 */
     void initialize(const string &str) {
-        numQueue = new Queue<string>();
+        formulaQueue = new Queue<string>();
         opStack = new Stack<Operator>();
         charStack = new Stack<char>();
         for (int i = str.length() - 1; i != -1; --i) {
@@ -44,37 +50,70 @@ private:
         return ch >= '0' && ch <= '9';
     }
 
-    // 解决数字
-    void dealWithNum() {
+    /*
+     * 解决数字
+     * 如果下一个字符是数字 则将其之后的所有数字字符放入str中
+     */
+    void dealWithNum(char op = 0) {
         string str;
+
+        // 如果数字前有正负号 将其保存到{str中}
+        if (op) {
+            str.push_back(op);
+        }
+        // 将本次弹出来的字符保存到{lastChar}中
+        lastChar = charStack->topValue();
+        // 将接下来的数字符号都保存到{str}中
         while (charStack->length() != 0
                && isNum(charStack->topValue())) {
             str.push_back(charStack->pop());
         }
-        numQueue->add(str);
+        formulaQueue->add(str);
     }
 
-    // 解决运算符
+    /*
+     * 解决运算符
+     * 如果下一个字符是运算符 判断运算符的类型
+     * 并以此判断需要使用的对应的处理方式
+     */
     void dealWithOperator() {
+        // 将弹出字符栈中的下一个字符保存到结构体中
         Operator opStruct;
         opStruct.op = charStack->pop();
 
         if (opStruct.op == '(') {
+            // 如果为前括号 将前括号保存到运算符栈中 优先级为0
             opStruct.priority = 0;
             opStack->push(opStruct);
 
         } else if (opStruct.op == ')') {
+            // 如果为后括号 调用{dealWithBracket}函数
+            // 将运算符栈中的所有运算符放入式子队列 直至遇到前括号
             dealWithBracket();
 
         } else {
+            /*
+             * TODO: 填充更多的运算符 && 完成对于负号的处理
+             *  如果为运算符 根据运算符类型为其附加运算优先级
+             */
             switch (opStruct.op) {
                 case '+':
                 case '-':
-                    opStruct.priority = 1;
+                    if (isNum(lastChar)) {
+                        // 上一个处理的字符为数字 则不为正负号 而是加减二元运算符
+                        opStruct.priority = 1;
+                    } else {
+                        // 上一个处理的字符不为数字 则为正负号 与接下来的数字一同保存
+                        dealWithNum(opStruct.op);
+                        return;
+                    }
                     break;
                 case '*':
                 case '/':
                     opStruct.priority = 2;
+                    break;
+                case '^':
+                    opStruct.priority = 3;
                     break;
                 default:
                     assert("非法输入!");
@@ -87,50 +126,63 @@ private:
                    opStruct.priority <= opStack->topValue().priority) {
                 str = "";
                 str.push_back(opStack->pop().op);
-                numQueue->add(str);
+                formulaQueue->add(str);
             }
+
+            // 将生成的结构体压入运算符栈中
             opStack->push(opStruct);
+            // 将本次弹出来的字符保存到{lastChar}中
+            lastChar = opStruct.op;
         }
     }
 
+    // 操作符
     void clearOperator() {
         string str;
         while (opStack->length() != 0) {
             str = "";
             str.push_back(opStack->pop().op);
-            numQueue->add(str);
+            formulaQueue->add(str);
         }
     }
 
     // 解决括号
+    // 将运算符栈中的所有运算符放入式子队列 直至遇到前括号
     void dealWithBracket() {
         string str;
+        // 如果没有遇到前括号 将遇到的运算符放入式子队列
         while (opStack->topValue().op != '(') {
             str = "";
             str.push_back(opStack->pop().op);
-            numQueue->add(str);
+            formulaQueue->add(str);
         }
+        // pop掉运算符栈中的前括号
         opStack->pop();
     }
 
-    // 转换结果为栈
+    // 将式子队列转换为包含逆波兰式的栈返回
     Stack<string> *toStack() {
         Stack<string> *ret = new Stack<string>();
-        while (numQueue->length() != 0) {
-            ret->push(numQueue->removeFirst());
+        while (formulaQueue->length() != 0) {
+            ret->push(formulaQueue->removeFirst());
         }
         return ret;
     }
 
 public:
     /*
-     * TODO: 将输入的字符串转换成逆波兰式
+     * 将输入的字符串转换成逆波兰式
      *  返回值为{LStack<string>*}类型, 即存储逆波兰式的栈的指针
      */
     Stack<string> *convert(const string &str) {
         initialize(str);
 
         while (charStack->length() != 0) {
+            // 移除空格
+            if (charStack->topValue() == ' ') {
+                charStack->pop();
+            }
+            // 判断是数字还是运算符 采取相应的方法解决
             if (isNum(charStack->topValue())) {
                 dealWithNum();
             } else {
@@ -143,6 +195,7 @@ public:
 
     string toString(const string &str) {
         Stack<string> *stack = convert(str);
+        // 转换为{string}类型
         string ret;
         while (stack->length() != 0) {
             ret.append(stack->pop());
