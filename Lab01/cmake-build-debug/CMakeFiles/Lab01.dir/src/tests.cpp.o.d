@@ -802,6 +802,6 @@ CMakeFiles/Lab01.dir/src/tests.cpp.o: \
   /Users/chris/Documents/Course/FA23/数据结构与算法/Lab/Lab01/include/test/TestReversePolish.h \
   /Users/chris/Documents/Course/FA23/数据结构与算法/Lab/Lab01/include/formula/ReversePolish.h \
   /Users/chris/Documents/Course/FA23/数据结构与算法/Lab/Lab01/include/test/TestFormula.h \
+  /Users/chris/Documents/Course/FA23/数据结构与算法/Lab/Lab01/include/calc/Calc.h \
   /Users/chris/Documents/Course/FA23/数据结构与算法/Lab/Lab01/include/formula/Formula.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/iostream \
-  /Users/chris/Documents/Course/FA23/数据结构与算法/Lab/Lab01/include/calc/Calc.h
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/iostream
