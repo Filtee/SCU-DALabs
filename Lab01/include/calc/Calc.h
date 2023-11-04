@@ -20,6 +20,11 @@ private:
     // 所有的 helper functions 在这里
 
 public:
+    static string convert(const string &str) {
+        double num = stod(str);
+        return to_string(num);
+    }
+
     // 加法运算
     static string add(const string &strA, const string &strB) {
         double numA = stod(strA);

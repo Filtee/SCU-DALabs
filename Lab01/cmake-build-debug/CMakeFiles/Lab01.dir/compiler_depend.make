@@ -1541,8 +1541,14 @@ CMakeFiles/Lab01.dir/src/tests.cpp.o: /Users/chris/Documents/Course/FA23/数据�
   /Users/chris/Documents/Course/FA23/数据结构与算法/Lab/Lab01/include/ADT/Queue.h \
   /Users/chris/Documents/Course/FA23/数据结构与算法/Lab/Lab01/include/ADT/DLink.h \
   /Users/chris/Documents/Course/FA23/数据结构与算法/Lab/Lab01/include/test/TestReversePolish.h \
-  /Users/chris/Documents/Course/FA23/数据结构与算法/Lab/Lab01/include/formula/ReversePolish.h
+  /Users/chris/Documents/Course/FA23/数据结构与算法/Lab/Lab01/include/formula/ReversePolish.h \
+  /Users/chris/Documents/Course/FA23/数据结构与算法/Lab/Lab01/include/test/TestFormula.h \
+  /Users/chris/Documents/Course/FA23/数据结构与算法/Lab/Lab01/include/calc/Calc.h \
+  /Users/chris/Documents/Course/FA23/数据结构与算法/Lab/Lab01/include/formula/Formula.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/iostream
 
+
+/Users/chris/Documents/Course/FA23/数据结构与算法/Lab/Lab01/include/formula/Formula.h:
 
 /Users/chris/Documents/Course/FA23/数据结构与算法/Lab/Lab01/include/formula/ReversePolish.h:
 
@@ -2230,6 +2236,8 @@ _deps/doctest-src/doctest/doctest.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/_types/_wctrans_t.h:
 
+/Users/chris/Documents/Course/FA23/数据结构与算法/Lab/Lab01/include/calc/Calc.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/pthread/qos.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__algorithm/ranges_is_heap.h:
@@ -2620,6 +2628,8 @@ _deps/doctest-src/doctest/doctest.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__type_traits/lazy.h:
 
+/Users/chris/Documents/Course/FA23/数据结构与算法/Lab/Lab01/include/test/TestFormula.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__type_traits/is_nothrow_convertible.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__type_traits/is_literal_type.h:
@@ -2733,6 +2743,8 @@ _deps/doctest-src/doctest/doctest.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/_types/_u_int16_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__fwd/memory_resource.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/iostream:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__functional/function.h:
 
