@@ -214,7 +214,7 @@ private:
 public:
     static Stack<string> *convert(const string &str) {
         ReversePolish *rp = new ReversePolish();
-        return rp->convert(str);
+        return rp->getStack(str);
     }
 
     static string convertToString(const string &str) {

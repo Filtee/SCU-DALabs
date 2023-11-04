@@ -1,4 +1,4 @@
-# Install script for directory: /Users/chris/Documents/dalabs/Lab01/cmake-build-debug/_deps/doctest-subbuild
+# Install script for directory: /Users/chris/Documents/Course/FA23/数据结构与算法/Lab/Lab01/cmake-build-debug/_deps/doctest-subbuild
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/chris/Documents/dalabs/Lab01/cmake-build-debug/_deps/doctest-subbuild/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/chris/Documents/Course/FA23/数据结构与算法/Lab/Lab01/cmake-build-debug/_deps/doctest-subbuild/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
