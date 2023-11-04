@@ -22,8 +22,8 @@ set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
 include(ExternalProject)
 ExternalProject_Add(doctest-populate
                      "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/doctest/doctest.git" "GIT_TAG" "v2.4.9" "GIT_SHALLOW" "TRUE"
-                    SOURCE_DIR          "/Users/chris/Documents/dalabs/Lab01/cmake-build-debug/_deps/doctest-src"
-                    BINARY_DIR          "/Users/chris/Documents/dalabs/Lab01/cmake-build-debug/_deps/doctest-build"
+                    SOURCE_DIR          "/Users/chris/Documents/Course/FA23/数据结构与算法/Lab/Lab01/cmake-build-debug/_deps/doctest-src"
+                    BINARY_DIR          "/Users/chris/Documents/Course/FA23/数据结构与算法/Lab/Lab01/cmake-build-debug/_deps/doctest-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

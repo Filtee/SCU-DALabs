@@ -6,7 +6,7 @@
 using namespace std;
 
 #include "ADT/Stack.h"
-#include "Calc/Calc.h"
+#include "calc/Calc.h"
 #include "ReversePolish.h"
 
 /*
@@ -38,7 +38,7 @@ private:
         //定义一个用来存储运算过程的栈
         Stack<string> *tempResult = new Stack<string>;
         while(formula->length() != 0){
-            string str = formula->topValue();
+            string str = formula->pop();
             //判断该字符串为数字还是操作符并进行操作
             switch(NorO(str)){
                 case 1:
@@ -48,9 +48,8 @@ private:
                 default:
                     //遇到符号，就从栈中提数
                     //由于逆波兰式中前两个数（对应这里的字符串）一定是数，故不用担心提不出两个数的问题
-                    string num1 = tempResult->topValue();
-                    tempResult->pop();
-                    string num2 = tempResult->topValue();
+                    string num1 = tempResult->pop();
+                    string num2 = tempResult->pop();
                     str.erase(0,1);
                     if(str == "+"){
                         tempResult->push(Calc::add(num1,num2));
@@ -71,7 +70,6 @@ private:
                     }else if(str == "!"){
                         tempResult->push(Calc::fac(num1));
                     }else{
-                        cout<<"非法字符"<<endl;
                     }
             }
         }
@@ -84,8 +82,6 @@ private:
     int NorO(string str){
         return  str[0] == 'n';
     };
-
-
 
 public:
     // Constructor

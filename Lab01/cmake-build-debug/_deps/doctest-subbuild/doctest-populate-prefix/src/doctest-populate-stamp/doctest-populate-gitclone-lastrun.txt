@@ -3,9 +3,9 @@
 # No other meaning or use of this file is supported.
 
 method=git
-command=/Users/chris/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake;-P;/Users/chris/Documents/dalabs/Lab01/cmake-build-debug/_deps/doctest-subbuild/doctest-populate-prefix/tmp/doctest-populate-gitclone.cmake
-source_dir=/Users/chris/Documents/dalabs/Lab01/cmake-build-debug/_deps/doctest-src
-work_dir=/Users/chris/Documents/dalabs/Lab01/cmake-build-debug/_deps
+command=/Users/chris/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake;-P;/Users/chris/Documents/Course/FA23/数据结构与算法/Lab/Lab01/cmake-build-debug/_deps/doctest-subbuild/doctest-populate-prefix/tmp/doctest-populate-gitclone.cmake
+source_dir=/Users/chris/Documents/Course/FA23/数据结构与算法/Lab/Lab01/cmake-build-debug/_deps/doctest-src
+work_dir=/Users/chris/Documents/Course/FA23/数据结构与算法/Lab/Lab01/cmake-build-debug/_deps
 repository=https://github.com/doctest/doctest.git
 remote=origin
 init_submodules=TRUE
