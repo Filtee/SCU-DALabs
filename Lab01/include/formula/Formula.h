@@ -49,7 +49,7 @@ private:
                     //遇到符号，就从栈中提数
                     //由于逆波兰式中前两个数（对应这里的字符串）一定是数，故不用担心提不出两个数的问题
                     string num1 = tempResult->topValue();
-                    formula->pop();
+                    tempResult->pop();
                     string num2 = tempResult->topValue();
                     str.erase(0,1);
                     if(str == "+"){
