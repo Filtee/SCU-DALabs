@@ -108,7 +108,6 @@ Lab01_EXTERNAL_OBJECTS =
 Lab01: CMakeFiles/Lab01.dir/src/main.cpp.o
 Lab01: CMakeFiles/Lab01.dir/src/tests.cpp.o
 Lab01: CMakeFiles/Lab01.dir/build.make
-Lab01: _deps/doctest-build/libdoctest_with_main.a
 Lab01: CMakeFiles/Lab01.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/chris/Documents/Course/FA23/数据结构与算法/Lab/Lab01/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Lab01"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Lab01.dir/link.txt --verbose=$(VERBOSE)

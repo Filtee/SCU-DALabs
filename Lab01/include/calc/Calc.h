@@ -3,6 +3,8 @@
 
 #include "string"
 #include "cmath"
+#include "stdexcept"
+
 using namespace std;
 
 /*
@@ -19,17 +21,17 @@ class Calc {
 private:
     // 所有的 helper functions 在这里
 
-public:
-    static string convert(const string &str) {
-        double num = stod(str);
-        return to_string(num);
-    }
 
+public:
     // 加法运算
     static string add(const string &strA, const string &strB) {
-        double numA = stod(strA);
-        double numB = stod(strB);
-        return to_string(numA + numB);
+        try {
+            double numA = stod(strA);
+            double numB = stod(strB);
+            return to_string(numA + numB);
+        } catch (const invalid_argument &msg) {
+            throw runtime_error("计算式输入错误!");
+        }
     }
 
     // 减法运算
@@ -53,13 +55,6 @@ public:
         return to_string(numA / numB);
     }
 
-    // 整除运算
-    static string fDev(const string &strA, const string &strB) {
-        int numA = stoi(strA);
-        int numB = stoi(strB);
-        return to_string((int) numA / numB);
-    }
-
     // 模运算
     static string mod(const string &strA, const string &strB) {
         int numA = stoi(strA);
@@ -69,28 +64,28 @@ public:
 
     // TODO: 开根号(二阶/三阶/...)
     static string root(const string &strA, const string &strB) {
-        double numA=stod(strA);
-        double numB=stod(strB);
+        double numA = stod(strA);
+        double numB = stod(strB);
 
-        return to_string(pow(numA,1/numB));
+        return to_string(pow(numA, 1 / numB));
     }
 
     // TODO: 幂乘运算
     static string power(const string &strA, const string &strB) {
-        double numA=stod(strA);
-        double numB=stod(strB);
-        return to_string(pow(numA,numB));
+        double numA = stod(strA);
+        double numB = stod(strB);
+        return to_string(pow(numA, numB));
     }
 
     // TODO: 阶乘运算
     static string fac(const string &strA) {
-        int numA=stoi(strA);
-        long long ans=1;
-        if(numA<=0){
+        int numA = stoi(strA);
+        long long ans = 1;
+        if (numA <= 0) {
             throw "This number is not positive";
         }
-        for(int i=1;i<numA;i++){
-            ans*=i;
+        for (int i = 1; i < numA; i++) {
+            ans *= i;
         }
 
         return to_string(ans);
