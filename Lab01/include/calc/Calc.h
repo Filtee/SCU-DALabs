@@ -23,6 +23,10 @@ private:
 
 
 public:
+    static string convert(const string &str) {
+        return to_string(stod(str));
+    }
+
     // 加法运算
     static string add(const string &strA, const string &strB) {
         try {

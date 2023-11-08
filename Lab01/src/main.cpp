@@ -19,18 +19,19 @@ int main() {
         cout << "请输入算式(以'='结束)：" << endl;
         getline(cin, inputStr);
 
-        while (inputStr[inputStr.length() - 1] != '=') {
-            cout << "格式有误，请重新输入" << endl;
-            getline(cin, inputStr);
+        try {
+            auto *formula1 = new Formula(inputStr);
+            cout << formula1->getResult() << endl;
+        } catch (const runtime_error::exception &e) {
+            cout << "输入错误，请重新输入!" << endl;
+            continue;
         }
-        inputStr.erase(inputStr.length() - 1);
-        Formula *formula1 = new Formula(inputStr);
 
-        cout << formula1->getResult() << endl;
-
-        cout << "是否继续（Y/N）?" << endl;
-        cin >> judge;
-        ifCountinue = judge == ('Y' | 'y');
+//        cout << "是否继续（Y/N）?" << endl;
+//        cin >> judge;
+//        ifCountinue = judge == ('Y' | 'y');
+        // 刷新
+        cin.get();
     }
 
     return 0;
