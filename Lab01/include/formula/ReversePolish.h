@@ -3,6 +3,8 @@
 
 #include "assert.h"
 #include "string"
+#include "ADT/Queue.h"
+
 using namespace std;
 
 /*
@@ -189,9 +191,8 @@ private:
             // 移除空格
             if (charStack->topValue() == ' ') {
                 charStack->pop();
-            }
-            // 判断是数字还是运算符 采取相应的方法解决
-            if (isNum(charStack->topValue())) {
+            } else if (isNum(charStack->topValue())) {
+                // 判断是数字还是运算符 采取相应的方法解决
                 dealWithNum();
             } else {
                 dealWithOperator();

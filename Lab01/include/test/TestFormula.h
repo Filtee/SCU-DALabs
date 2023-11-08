@@ -10,7 +10,7 @@
  */
 TEST_CASE("Test Formula.h") {
     SUBCASE("Test1") {
-        string a = "-1 + (6 + 2) * 3";
+        string a = "-1 + (6 + 2) * 3 ";
 
         Formula *formula = new Formula(a);
         string actual = formula->getResult();
