@@ -16,7 +16,7 @@ add_executable(Lab01
         ${DIR_SRC}
         ${DIR_TEST}
 )
-#
+
 #include(FetchContent)
 #FetchContent_Declare(
 #        doctest

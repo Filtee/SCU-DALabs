@@ -52,7 +52,7 @@ private:
 
     // 判断是否为数字
     int isNum(char ch) {
-        return ch >= '0' && ch <= '9';
+        return ch >= '0' && ch <= '9' || ch == '.';
     }
 
     // 解决数字 如果下一个字符是数字 则将其之后的所有数字字符放入str中
@@ -86,9 +86,11 @@ private:
                 break;
             case '*':
             case '/':
+            case '%':
                 opStruct->priority = 2;
                 break;
             case '^':
+            case '&':
                 opStruct->priority = 3;
                 break;
             default:

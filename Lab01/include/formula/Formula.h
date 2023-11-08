@@ -62,6 +62,7 @@ private:
                         break;
                     case '-':
                         func = Calc::sub;
+                        swap(num1, num2);
                         break;
                     case '*':
                         func = Calc::mul;
@@ -69,15 +70,19 @@ private:
                     case '/':
                         // 除法运算这里暂时选用精度更高的dev()，保证后续不出错
                         func = Calc::dev;
+                        swap(num1, num2);
                         break;
                     case '%':
                         func = Calc::mod;
+                        swap(num1, num2);
                         break;
                     case '&':
-//                        func = Calc::power;
+                        func = Calc::root;
+                        swap(num1, num2);
                         break;
                     case '^':
                         func = Calc::power;
+                        swap(num1, num2);
                         break;
                     case '!':
                         break;
