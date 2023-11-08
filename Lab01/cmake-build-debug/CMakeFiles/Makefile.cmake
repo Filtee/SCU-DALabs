@@ -7,7 +7,6 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/Users/chris/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/BasicConfigVersion-SameMajorVersion.cmake.in"
   "/Users/chris/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCInformation.cmake"
   "/Users/chris/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCXXInformation.cmake"
   "/Users/chris/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake"
@@ -16,7 +15,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Users/chris/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeGenericSystem.cmake"
   "/Users/chris/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake"
   "/Users/chris/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake"
-  "/Users/chris/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake"
   "/Users/chris/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake"
   "/Users/chris/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake"
   "/Users/chris/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/AppleClang-C.cmake"
@@ -24,11 +22,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Users/chris/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/Users/chris/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/Clang.cmake"
   "/Users/chris/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Compiler/GNU.cmake"
-  "/Users/chris/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FetchContent.cmake"
-  "/Users/chris/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FetchContent/CMakeLists.cmake.in"
-  "/Users/chris/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindGit.cmake"
-  "/Users/chris/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake"
-  "/Users/chris/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindPackageMessage.cmake"
   "/Users/chris/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-C.cmake"
   "/Users/chris/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-AppleClang-CXX.cmake"
   "/Users/chris/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Apple-Clang-C.cmake"
@@ -38,13 +31,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Users/chris/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/Darwin.cmake"
   "/Users/chris/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Platform/UnixPaths.cmake"
   "/Users/chris/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/ProcessorCount.cmake"
-  "/Users/chris/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake"
   "/Users/chris/Documents/Course/FA23/数据结构与算法/Lab/Lab01/CMakeLists.txt"
   "CMakeFiles/3.26.4/CMakeCCompiler.cmake"
   "CMakeFiles/3.26.4/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.26.4/CMakeSystem.cmake"
-  "_deps/doctest-src/CMakeLists.txt"
-  "_deps/doctest-src/scripts/cmake/Config.cmake.in"
   )
 
 # The corresponding makefile is:
@@ -55,15 +45,10 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "_deps/doctest-subbuild/CMakeLists.txt"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "_deps/doctest-build/generated/doctestConfigVersion.cmake"
-  "_deps/doctest-build/generated/doctestConfig.cmake"
-  "_deps/doctest-build/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Lab01.dir/DependInfo.cmake"
-  "_deps/doctest-build/CMakeFiles/doctest_with_main.dir/DependInfo.cmake"
   )

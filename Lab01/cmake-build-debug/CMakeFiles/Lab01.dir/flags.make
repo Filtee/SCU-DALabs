@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/chris/Documents/Course/FA23/数据结构与算法/Lab/Lab01/include -I/Users/chris/Documents/Course/FA23/数据结构与算法/Lab/Lab01/cmake-build-debug/_deps/doctest-src
+CXX_INCLUDES = -I/Users/chris/Documents/Course/FA23/数据结构与算法/Lab/Lab01/include
 
 CXX_FLAGSarm64 = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
 

@@ -8,7 +8,7 @@
 using namespace std;
 
 /*
- * TODO: 逆波兰式转换类
+ * 逆波兰式转换类
  *  不需要实例化!
  *  工作原理:
  *      通过调用{ReversePolish::convert(str)}获得由输入的字符串{str}
