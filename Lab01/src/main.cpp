@@ -24,6 +24,7 @@ int main() {
             cout << formula1->getResult() << endl;
         } catch (const runtime_error::exception &e) {
             cout << "输入错误，请重新输入!" << endl;
+            cin.get();
             continue;
         }
 

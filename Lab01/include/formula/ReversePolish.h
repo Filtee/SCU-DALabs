@@ -67,6 +67,7 @@ private:
         while (charStack->length() != 0
                && isNum(charStack->topValue())) {
             str.push_back(charStack->pop());
+
         }
 
         // 在第0位插入字符n 作为标记 后保存到{formulaQueue}中
@@ -138,6 +139,7 @@ private:
             str.push_back(opStack->pop().op);
             // 在第0位插入字符o 作为标记 后保存到{formulaQueue}中
             str.insert(0, "o");
+
             formulaQueue->add(str);
         }
 
