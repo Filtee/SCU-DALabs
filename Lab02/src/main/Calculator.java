@@ -1,3 +1,5 @@
+package main;
+
 import java.util.stream.DoubleStream;
 
 public class Calculator {
