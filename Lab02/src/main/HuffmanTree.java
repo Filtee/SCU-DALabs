@@ -4,26 +4,6 @@ import java.util.*;
 
 public class HuffmanTree {
     /****************************************************************
-     *                private methods and properties                *
-     ****************************************************************/
-
-    private Map<Character, Integer> frequencyTable;
-    private Map<String, String> codeTable;
-    private Map<String, String> decodeTable;
-
-    private void huffmanTree() {
-        MinPQ<String> minPQ = new MinPQ<>();
-    }
-
-    private void huffmanBuild() {
-
-    }
-
-    private void huffmanCode() {
-
-    }
-
-    /****************************************************************
      *                 public methods and properties                *
      ****************************************************************/
 
@@ -38,8 +18,9 @@ public class HuffmanTree {
      *
      * @param frequencyTable the frequency table
      */
-    public void Store(HashMap<Character, Integer> frequencyTable) {
+    public void Store(Map<Character, Integer> frequencyTable) {
         this.frequencyTable = frequencyTable;
+        huffmanBuild();
     }
 
     /**
@@ -48,7 +29,7 @@ public class HuffmanTree {
      *
      * @return the frequency table
      */
-    public Map<String, String> getCodeTable() {
+    public Map<Character, String> getCodeTable() {
         return codeTable;
     }
 
@@ -58,7 +39,75 @@ public class HuffmanTree {
      *
      * @return the decode table
      */
-    public Map<String, String> getDecodeTable() {
+    public Map<String, Character> getDecodeTable() {
         return decodeTable;
+    }
+
+    /****************************************************************
+     *                private methods and properties                *
+     ****************************************************************/
+    class HuffmanNode {
+        private final char character;
+        private final int frequency;
+        private final HuffmanNode left;
+        private final HuffmanNode right;
+
+        HuffmanNode(char character, int frequency) {
+            this.character = character;
+            this.frequency = frequency;
+            this.left = null;
+            this.right = null;
+        }
+
+        HuffmanNode(HuffmanNode left, HuffmanNode right) {
+            this.character = '\0';
+            this.frequency = left.frequency + right.frequency;
+            this.left = left;
+            this.right = right;
+        }
+    }
+
+    private Map<Character, Integer> frequencyTable;
+    private final Map<Character, String> codeTable;
+    private final Map<String, Character> decodeTable;
+
+    private void huffmanBuild() {
+        MinPQ<HuffmanNode> minPQ = new MinPQ<>(Comparator.comparingInt(o -> o.frequency));
+
+        // Insert all the nodes into the priority queue.
+        for (Map.Entry<Character, Integer> entry : frequencyTable.entrySet()) {
+            HuffmanNode node = new HuffmanNode(entry.getKey(), entry.getValue());
+            minPQ.insert(node);
+        }
+
+        // Build the Huffman tree.
+        while (minPQ.size() > 1) {
+            HuffmanNode left = minPQ.delMin();
+            HuffmanNode right = minPQ.delMin();
+            HuffmanNode node = new HuffmanNode(left, right);
+            minPQ.insert(node);
+        }
+
+        // Traverse the Huffman tree to build the code table.
+        huffmanCode(minPQ.delMin());
+    }
+
+    // Traverse the Huffman tree to build the code table.
+    private void huffmanCode(HuffmanNode root) {
+        huffmanCode(root, "");
+    }
+
+    // Helper function for huffmanCode(HuffmanNode root).
+    private void huffmanCode(HuffmanNode root, String code) {
+        // Base case.
+        if (root.left == null && root.right == null) {
+            codeTable.put(root.character, code);
+            decodeTable.put(code, root.character);
+            return;
+        }
+
+        // Recursive case.
+        huffmanCode(root.left, code + "0");
+        huffmanCode(root.right, code + "1");
     }
 }
