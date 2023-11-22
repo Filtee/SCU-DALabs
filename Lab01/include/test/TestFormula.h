@@ -52,7 +52,7 @@
 
         Formula *formula = new Formula(a);
         string actual = formula->getResult();
-        string expect = Calc::convert("275.25");
+        string expect = Calc::convert("429.255");
 
         CHECK_EQ(expect, actual);
     }

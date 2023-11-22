@@ -1,4 +1,0 @@
-/Users/chris/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /Users/chris/Documents/Course/FA23/数据结构与算法/Lab/Lab01 -B /Users/chris/Documents/Course/FA23/数据结构与算法/Lab/Lab01/cmake-build-debug
--- Configuring done (0.3s)
--- Generating done (0.0s)
--- Build files have been written to: /Users/chris/Documents/Course/FA23/数据结构与算法/Lab/Lab01/cmake-build-debug
