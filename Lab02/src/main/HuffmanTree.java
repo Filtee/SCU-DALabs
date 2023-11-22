@@ -72,7 +72,13 @@ public class HuffmanTree {
     private final Map<String, Character> decodeTable;
 
     private void huffmanBuild() {
-        MinPQ<HuffmanNode> minPQ = new MinPQ<>(Comparator.comparingInt(o -> o.frequency));
+        Comparator<HuffmanNode> comparator = new Comparator<>() {
+            @Override
+            public int compare(HuffmanNode o1, HuffmanNode o2) {
+                return o1.frequency - o2.frequency;
+            }
+        };
+        MinPQ<HuffmanNode> minPQ = new MinPQ<>(comparator);
 
         // Insert all the nodes into the priority queue.
         for (Map.Entry<Character, Integer> entry : frequencyTable.entrySet()) {
