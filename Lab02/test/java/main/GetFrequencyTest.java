@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class GetFrequencyTest {
     @Test
     void getFrequency() throws IOException {
-        //这里的文件路径，记得改成你们自己的
+
         String filePath = "./test/java/resources/f1.txt";
         Map<Character,Integer> charFrequency = new HashMap<>();
 

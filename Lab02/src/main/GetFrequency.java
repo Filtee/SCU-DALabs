@@ -13,6 +13,7 @@ public class GetFrequency {
     public GetFrequency(){}
 
     // 用来获取字符出现的频率的方法
+    //静态方法不用实例化即可调用
     public static Map<Character,Integer> getFrequency(String filePath) throws IOException {
 
         Map<Character,Integer> charFrequency = new HashMap<>();
