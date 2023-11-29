@@ -9,7 +9,6 @@ public class HuffmanTree {
 
     public HuffmanTree() {
         this.codeTable = new HashMap<>();
-        this.decodeTable = new HashMap<>();
     }
 
     /**
@@ -34,13 +33,22 @@ public class HuffmanTree {
     }
 
     /**
-     * Returns the decode table.
-     * Key is the code, value is the character.
+     * Decodes the input bit.
      *
-     * @return the decode table
+     * @param input the input bit
+     * @return the decoded character
      */
-    public Map<String, Character> getDecodeTable() {
-        return decodeTable;
+    public String decode(char input) {
+        curr = (input == '0') ? curr.left : curr.right;
+
+        // If the current node is a leaf node, return the character.
+        if (curr.left == null && curr.right == null) {
+            String result = String.valueOf(curr.character);
+            curr = root;
+            return result;
+        } else {
+            return "";
+        }
     }
 
     /****************************************************************
@@ -69,7 +77,8 @@ public class HuffmanTree {
 
     private Map<Character, Integer> frequencyTable;
     private final Map<Character, String> codeTable;
-    private final Map<String, Character> decodeTable;
+    private HuffmanNode root;
+    private HuffmanNode curr;
 
     private void huffmanBuild() {
         Comparator<HuffmanNode> comparator = new Comparator<>() {
@@ -95,7 +104,9 @@ public class HuffmanTree {
         }
 
         // Traverse the Huffman tree to build the code table.
-        huffmanCode(minPQ.delMin());
+        root = minPQ.delMin();
+        curr = root;
+        huffmanCode(root);
     }
 
     // Traverse the Huffman tree to build the code table.
@@ -108,7 +119,6 @@ public class HuffmanTree {
         // Base case.
         if (root.left == null && root.right == null) {
             codeTable.put(root.character, code);
-            decodeTable.put(code, root.character);
             return;
         }
 

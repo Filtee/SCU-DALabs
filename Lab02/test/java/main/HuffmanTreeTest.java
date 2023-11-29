@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -40,6 +41,34 @@ class HuffmanTreeTest {
     }
 
     @Test
-    void getDecodeTable() {
+    void decode() {
+        Map<Character, Integer> input = new HashMap<>();
+        input.put('e', 120);
+        input.put('d', 42);
+        input.put('c', 32);
+        input.put('m', 24);
+        input.put('k', 7);
+        input.put('l', 42);
+        input.put('u', 37);
+        input.put('z', 2);
+
+        HuffmanTree huffmanTree = new HuffmanTree();
+        huffmanTree.Store(input);
+
+        String actual = "";
+        actual += huffmanTree.decode('0');
+        actual += huffmanTree.decode('1');
+        actual += huffmanTree.decode('1');
+        actual += huffmanTree.decode('0');
+        actual += huffmanTree.decode('1');
+        actual += huffmanTree.decode('1');
+        actual += huffmanTree.decode('1');
+        actual += huffmanTree.decode('1');
+        actual += huffmanTree.decode('0');
+        actual += huffmanTree.decode('0');
+
+        String expected = "edz";
+
+        assertEquals(expected, actual);
     }
 }
