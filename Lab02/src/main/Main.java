@@ -15,7 +15,14 @@ public class Main {
         huffmanTree.Store(getFrequency);
         Map<Character,String> codeTable = huffmanTree.getCodeTable();
 
-        //初级要求：把codeTable打印在终端上
+        //初级要求：
+        //把频度集打印在终端上
+        for(Map.Entry<Character,Integer> entry : getFrequency.entrySet()){
+            System.out.println("Character:" + entry.getKey() + ", Frequency:" + entry.getValue());
+        }
+
+        System.out.println("-------------------------------");
+        // 把codeTable打印在终端上
         for(Map.Entry<Character,String> entry : codeTable.entrySet()){
             System.out.println("Character:" + entry.getKey() + ", Code:" + entry.getValue());
         }
