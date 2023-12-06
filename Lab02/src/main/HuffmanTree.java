@@ -35,9 +35,16 @@ public class HuffmanTree {
 
         for (int i = 0; i < code.length(); i++) {
             if (code.charAt(i) == '1') {
-                codeByte |= 1 << (7 - encodeCount);
+                codeByte |= (byte) (1 << (7 - encodeCount));
             }
 
+            // If the current node is the end of the file,
+            // return the encoded byte.
+            if (input == '\0') {
+                output = codeByte;
+            }
+
+            // If the code byte is full, return the encoded byte.
             if (encodeCount == 7) {
                 output = codeByte;
                 codeByte = 0;
@@ -46,6 +53,7 @@ public class HuffmanTree {
                 encodeCount++;
             }
         }
+
         return output;
     }
 
@@ -57,6 +65,7 @@ public class HuffmanTree {
      */
     public String decode(byte input) {
         String output = "";
+        // Traverse the Huffman tree.
         for (int i = 0; i < 8; i++) {
             if ((input & (1 << (7 - i))) != 0) {
                 curr = curr.right;
@@ -64,7 +73,15 @@ public class HuffmanTree {
                 curr = curr.left;
             }
 
+            // If the current node is a leaf node, return the decoded character.
+            assert curr != null;
             if (curr.left == null && curr.right == null) {
+                // If the current node is the end of the file,
+                // return the decoded string.
+                if (curr.character == '\0') {
+                    break;
+                }
+
                 output += curr.character;
                 curr = root;
             }
