@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        String filePath = "./test/java/resources/f1.txt";
+        String filePath = "./test/java/resources/f3.txt";
 
         Map<Character,Integer> getFrequency = new HashMap<>();
         getFrequency = GetFrequency.getFrequency(filePath);

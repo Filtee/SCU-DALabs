@@ -56,18 +56,11 @@ class HuffmanTreeTest {
         huffmanTree.Store(input);
 
         String actual = "";
-        actual += huffmanTree.decode('0');
-        actual += huffmanTree.decode('1');
-        actual += huffmanTree.decode('1');
-        actual += huffmanTree.decode('0');
-        actual += huffmanTree.decode('1');
-        actual += huffmanTree.decode('1');
-        actual += huffmanTree.decode('1');
-        actual += huffmanTree.decode('1');
-        actual += huffmanTree.decode('0');
-        actual += huffmanTree.decode('0');
-
-        String expected = "edz";
+        byte[] inputBytes = new byte[]{(byte) 0b11110011, (byte) 0b11011111, (byte) 0b11011110};
+        for (byte inputByte : inputBytes) {
+            actual += huffmanTree.decode(inputByte);
+        }
+        String expected = "zkmlc";
 
         assertEquals(expected, actual);
     }
