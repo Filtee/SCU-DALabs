@@ -23,6 +23,56 @@ public class HuffmanTree {
     }
 
     /**
+     * Encodes the input character.
+     *
+     * @param input the input character
+     *              (must be one of the keys in the frequency table)
+     * @return the encoded byte
+     */
+    public byte encode(char input) {
+        String code = codeTable.get(input);
+        byte output = 0;
+
+        for (int i = 0; i < code.length(); i++) {
+            if (code.charAt(i) == '1') {
+                codeByte |= 1 << (7 - encodeCount);
+            }
+
+            if (encodeCount == 7) {
+                output = codeByte;
+                codeByte = 0;
+                encodeCount = 0;
+            } else {
+                encodeCount++;
+            }
+        }
+        return output;
+    }
+
+    /**
+     * Decodes the input byte.
+     *
+     * @param input the input byte
+     * @return the decoded character
+     */
+    public String decode(byte input) {
+        String output = "";
+        for (int i = 0; i < 8; i++) {
+            if ((input & (1 << (7 - i))) != 0) {
+                curr = curr.right;
+            } else {
+                curr = curr.left;
+            }
+
+            if (curr.left == null && curr.right == null) {
+                output += curr.character;
+                curr = root;
+            }
+        }
+        return output;
+    }
+
+    /**
      * Returns the frequency table.
      * Key is the character, value is the frequency.
      *
@@ -30,25 +80,6 @@ public class HuffmanTree {
      */
     public Map<Character, String> getCodeTable() {
         return codeTable;
-    }
-
-    /**
-     * Decodes the input bit.
-     *
-     * @param input the input bit
-     * @return the decoded character
-     */
-    public String decode(char input) {
-        curr = (input == '0') ? curr.left : curr.right;
-
-        // If the current node is a leaf node, return the character.
-        if (curr.left == null && curr.right == null) {
-            String result = String.valueOf(curr.character);
-            curr = root;
-            return result;
-        } else {
-            return "";
-        }
     }
 
     /****************************************************************
@@ -79,6 +110,10 @@ public class HuffmanTree {
     private final Map<Character, String> codeTable;
     private HuffmanNode root;
     private HuffmanNode curr;
+
+    private byte codeByte;
+    private int encodeCount;
+
 
     private void huffmanBuild() {
         Comparator<HuffmanNode> comparator = new Comparator<>() {
@@ -118,7 +153,7 @@ public class HuffmanTree {
     private void huffmanCode(HuffmanNode root, String code) {
         // Base case.
         if (root.left == null && root.right == null) {
-            codeTable.put(root.character, code);
+            codeTable.put(root.character, String.valueOf(code));
             return;
         }
 
