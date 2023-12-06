@@ -11,7 +11,7 @@ public class Main {
 
         int choice = 0;
 
-        String filePath = "./test/java/resources/f3.txt";
+        String filePath = "./test/java/resources/f1.txt";
 
         Map<Character, Integer> getFrequency = new HashMap<>();
         getFrequency = GetFrequency.getFrequency(filePath);
@@ -24,10 +24,10 @@ public class Main {
             //用户界面：
             System.out.println("--------------------欢迎使用huffman编码器---------------------");
             System.out.println("操作命令说明：");
-            System.out.println("统计输入文件的字符频度并堆字符集编码并输出（基本要求）：1");
-            System.out.println("           对整个文件编码并保存编码后结果（中级要求）：2");
-            System.out.println("                               文件解码（高级要求）：3");
-            System.out.println("                                              退出：4");
+            System.out.println("1：统计输入文件的字符频度并堆字符集编码并输出至文件（基本要求）");
+            System.out.println("2：对整个文件编码并保存编码后结果（中级要求）");
+            System.out.println("3：文件解码（高级要求）");
+            System.out.println("4：退出");
 
             //获取用户输入的指令
             System.out.println("请输入命令：");
@@ -46,6 +46,9 @@ public class Main {
                     for(Map.Entry<Character, String> entry : codeTable.entrySet()) {
                         System.out.println("Character:" + entry.getKey() + ", Code:" + entry.getValue());
                     }
+
+                    // 调用静态方法将Map写入文件codeFrequency.txt
+                    GetFrequency.writeMapToFile(getFrequency, "codeFrequency.txt");
                     break;
                 //中级要求:
                 case 2:
@@ -58,7 +61,7 @@ public class Main {
                 case 4:
                     System.exit(0);
                 default:
-                    System.out.println("无效命令，请重新输入！");
+                    System.out.println("无效命令，请重新输入！！！");
             }
         }
     }

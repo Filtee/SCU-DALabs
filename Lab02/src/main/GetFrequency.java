@@ -1,8 +1,6 @@
 package main;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -33,4 +31,17 @@ public class GetFrequency {
         return charFrequency;
     }
 
+    //定义了将Map写入文件的静态方法
+    public static void writeMapToFile(Map<Character, Integer> map, String fileName) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
+            // 遍历Map的键值对，将其写入文件
+            for (Map.Entry<Character, Integer> entry : map.entrySet()) {
+                writer.write(entry.getKey() + ": " + entry.getValue());
+                writer.newLine();  // 换行
+            }
+            System.out.println("Map写入文件成功！");
+        } catch (IOException e) {
+            System.err.println("写入文件时发生错误：" + e.getMessage());
+        }
+    }
 }
