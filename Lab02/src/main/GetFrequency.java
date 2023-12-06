@@ -33,13 +33,13 @@ public class GetFrequency {
 
     //定义了将Map写入文件的静态方法
     public static void writeMapToFile(Map<Character, Integer> map, String fileName) {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
+        try (BufferedWriter writer1 = new BufferedWriter(new FileWriter(fileName))) {
             // 遍历Map的键值对，将其写入文件
             for (Map.Entry<Character, Integer> entry : map.entrySet()) {
-                writer.write(entry.getKey() + ": " + entry.getValue());
-                writer.newLine();  // 换行
+                writer1.write(entry.getKey() + ": " + entry.getValue());
+                writer1.newLine();  // 换行
             }
-            System.out.println("Map写入文件成功！");
+            System.out.println("频度集写入文件成功！");
         } catch (IOException e) {
             System.err.println("写入文件时发生错误：" + e.getMessage());
         }

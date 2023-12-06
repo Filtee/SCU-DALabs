@@ -47,8 +47,11 @@ public class Main {
                         System.out.println("Character:" + entry.getKey() + ", Code:" + entry.getValue());
                     }
 
-                    // 调用静态方法将Map写入文件codeFrequency.txt
-                    GetFrequency.writeMapToFile(getFrequency, "codeFrequency.txt");
+                    // 调用静态方法将频度集写入文件getFrequency.txt
+                    GetFrequency.writeMapToFile(getFrequency, "getFrequency.txt");
+                    // 调用静态方法将码字集写入文件getCode.txt
+                    HuffmanTree.writeMapToFile(codeTable,"getCode.txt");
+
                     break;
                 //中级要求:
                 case 2:

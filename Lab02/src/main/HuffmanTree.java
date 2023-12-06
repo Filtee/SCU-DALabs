@@ -1,5 +1,8 @@
 package main;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.*;
 
 public class HuffmanTree {
@@ -183,5 +186,19 @@ public class HuffmanTree {
         // Recursive case.
         huffmanCode(root.left, code + "0");
         huffmanCode(root.right, code + "1");
+    }
+
+    //将码字集写入文件的静态方法
+    public static void writeMapToFile(Map<Character, String> map, String fileName) {
+        try (BufferedWriter writer2 = new BufferedWriter(new FileWriter(fileName))) {
+            // 遍历Map的键值对，将其写入文件
+            for (Map.Entry<Character, String> entry : map.entrySet()) {
+                writer2.write(entry.getKey() + ": " + entry.getValue());
+                writer2.newLine();  // 换行
+            }
+            System.out.println("码字集写入文件成功！");
+        } catch (IOException e) {
+            System.err.println("写入文件时发生错误：" + e.getMessage());
+        }
     }
 }
