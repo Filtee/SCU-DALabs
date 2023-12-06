@@ -30,11 +30,15 @@ public class HuffmanTree {
      * @return the encoded byte
      */
     public byte encode(char input) {
+        //对于encode中存在的字符，首先将其编码以string的形式载至code中
         String code = codeTable.get(input);
         byte output = 0;
 
+        //遍历code的每一位
         for (int i = 0; i < code.length(); i++) {
+
             if (code.charAt(i) == '1') {
+                //如果该位置为1，则将codeByte的对应位设为1
                 codeByte |= (byte) (1 << (7 - encodeCount));
             }
 
@@ -66,9 +70,12 @@ public class HuffmanTree {
         String output = "";
         // Traverse the Huffman tree.
         for (int i = 0; i < 8; i++) {
+            //检查byte中每一位的值
             if ((input & (1 << (7 - i))) != 0) {
+                //如果值为1，则移动到当前结点的右子结点
                 curr = curr.right;
             } else {
+                //如果值为0，移动到当前结点的左子结点
                 curr = curr.left;
             }
 
