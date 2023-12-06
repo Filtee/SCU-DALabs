@@ -38,17 +38,16 @@ public class HuffmanTree {
                 codeByte |= (byte) (1 << (7 - encodeCount));
             }
 
-            // If the current node is the end of the file,
-            // return the encoded byte.
-            if (input == '\0') {
-                output = codeByte;
-            }
-
-            // If the code byte is full, return the encoded byte.
-            if (encodeCount == 7) {
+            if (encodeCount == 7 && input != '\0') {
+                // If the code byte is full, return the encoded byte.
                 output = codeByte;
                 codeByte = 0;
                 encodeCount = 0;
+            } else if (input == '\0') {
+                // If the current node is the end of the file,
+                // return the encoded byte.
+                output = codeByte;
+                break;
             } else {
                 encodeCount++;
             }
