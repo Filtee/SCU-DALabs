@@ -22,10 +22,11 @@ public class GetFrequency {
             // 逐字符读取文件内容
             while((curChar = reader.read()) != -1){
                 char character = (char) curChar;
-
                 // 更新字符频率
                 charFrequency.put(character,charFrequency.getOrDefault(character,0) + 1);
             }
+            //加入结束字符\0的
+            charFrequency.put('\0',1);
         }
 
         return charFrequency;
@@ -35,9 +36,10 @@ public class GetFrequency {
     public static void writeMapToFile(Map<Character, Integer> map, String fileName) {
         try (BufferedWriter writer1 = new BufferedWriter(new FileWriter(fileName))) {
             // 遍历Map的键值对，将其写入文件
+            // 记录频度集时删去了换行，均用反斜杠\隔开，便于处理文本本身的换行符
             for (Map.Entry<Character, Integer> entry : map.entrySet()) {
-                writer1.write(entry.getKey() + ": " + entry.getValue());
-                writer1.newLine();  // 换行
+                writer1.write(entry.getKey() + "\\" + entry.getValue()+ "\\");
+                // writer1.newLine();  // 换行
             }
             System.out.println("频度集写入文件成功！");
         } catch (IOException e) {
