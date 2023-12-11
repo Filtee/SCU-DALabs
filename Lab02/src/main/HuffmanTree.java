@@ -32,11 +32,13 @@ public class HuffmanTree {
      *              (must be one of the keys in the frequency table)
      * @return the encoded byte
      */
-    public byte encode(char input) {
+    public byte[] encode(char input) {
         //对于encode中存在的字符，首先将其编码以string的形式载至code中
         String code = codeTable.get(input);
-        byte output = 0;
-
+        // 采用byte数组返回值，0号元素为要写入的字节数，1、2号元素为待写入字节
+        // 解决了字符编码过长，output被覆盖漏掉1字节的问题
+        byte[] noutput =new byte[3];
+        int bytecount=0;
         //遍历code的每一位
         for (int i = 0; i < code.length(); i++) {
 
@@ -47,20 +49,28 @@ public class HuffmanTree {
 
             if (encodeCount == 7 && input != '\0') {
                 // If the code byte is full, return the encoded byte.
-                output = codeByte;
+                if(bytecount==0){
+                    noutput[1]=codeByte;
+                    noutput[0]=1;
+                    bytecount++;
+                }else{
+                    noutput[2]=codeByte;
+                    noutput[0]=2;
+                }
                 codeByte = 0;
                 encodeCount = 0;
-            } else if (input == '\0') {
+            } else if (encodeCount == 7) {
                 // If the current node is the end of the file,
                 // return the encoded byte.
-                output = codeByte;
+                noutput[1]=codeByte;
+                noutput[0]=1;
                 break;
             } else {
                 encodeCount++;
             }
         }
 
-        return output;
+        return noutput;
     }
 
     /**
@@ -193,8 +203,8 @@ public class HuffmanTree {
         try (BufferedWriter writer2 = new BufferedWriter(new FileWriter(fileName))) {
             // 遍历Map的键值对，将其写入文件
             for (Map.Entry<Character, String> entry : map.entrySet()) {
-                writer2.write(entry.getKey() + ": " + entry.getValue());
-                writer2.newLine();  // 换行
+                writer2.write(entry.getKey() + "\\" + entry.getValue()+ "\\");
+                // writer2.newLine();  // 换行
             }
             System.out.println("码字集写入文件成功！");
         } catch (IOException e) {

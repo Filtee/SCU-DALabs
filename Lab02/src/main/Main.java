@@ -10,8 +10,14 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int choice = 0;
-
+        // 源文件路径
         String filePath = "./test/java/resources/f1.txt";
+        // 编码输出文件路径
+        String targetFilePath="result.txt";
+        // 频度集路径
+        String fFilePath="getFrequency.txt";
+        // 解码输出文件路径
+        String outputFilePath="recode.txt";
 
         Map<Character, Integer> getFrequency = new HashMap<>();
         getFrequency = GetFrequency.getFrequency(filePath);
@@ -55,11 +61,11 @@ public class Main {
                     break;
                 //中级要求:
                 case 2:
-
+                    FileCoder.encodeFile(filePath,targetFilePath,fFilePath,huffmanTree);
                     break;
                 //高级要求
                 case 3:
-
+                    FileCoder.decodeFile(outputFilePath,targetFilePath,fFilePath,huffmanTree);
                     break;
                 case 4:
                     System.exit(0);
