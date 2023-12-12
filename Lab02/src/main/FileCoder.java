@@ -64,9 +64,18 @@ public class FileCoder {
             os.write(huffmanTree.encode('\0')[1]);
             os.close();
             reader.close();
+            File sourceFile=new File(filePath);
+            File targetFile=new File(targetFilePath);
 
+            float compressRatio;
+            System.out.println("编码成功");
+            System.out.println("原文件大小:"+sourceFile.length()+" B");
+            System.out.println("编码文件大小:"+targetFile.length()+" B");
+            // 查到压缩比是指压缩前/压缩后，压缩率是压缩后/压缩前，这里按照ppt要求算压缩比
+            compressRatio= (float) sourceFile.length()/targetFile.length();
+            System.out.println("压缩比(压缩前文件大小/压缩后文件大小):"+String.format("%.3f",compressRatio));
         }catch (IOException e){
-            System.out.print("IOException");
+            System.out.println("编码失败，请检查原文件或频度集码字集文件是否存在");
         }
 
     }
@@ -119,9 +128,9 @@ public class FileCoder {
             }
             writer.close();
             ris.close();
-
+            System.out.println("解码成功");
         }catch (IOException e){
-            System.out.print("IOException");
+            System.out.println("解码失败，请检查编码文件或频度集码字集文件是否存在");
         }
 
     }

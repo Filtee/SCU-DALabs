@@ -11,13 +11,13 @@ public class Main {
 
         int choice = 0;
         // 源文件路径
-        String filePath = "./test/java/resources/f1.txt";
+        String filePath = "./test/java/resources/f3.txt";
         // 编码输出文件路径
-        String targetFilePath="result.txt";
+        String targetFilePath="result.huf";
         // 频度集路径
         String fFilePath="getFrequency.txt";
         // 解码输出文件路径
-        String outputFilePath="recode.txt";
+        String outputFilePath="reconstruct.txt";
 
         Map<Character, Integer> getFrequency = new HashMap<>();
         getFrequency = GetFrequency.getFrequency(filePath);
