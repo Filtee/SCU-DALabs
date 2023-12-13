@@ -1,7 +1,6 @@
 package main;
 
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -13,20 +12,19 @@ public class Main {
         // 源文件路径
         String filePath = "./test/java/resources/f3.txt";
         // 编码输出文件路径
-        String targetFilePath="result.huf";
+        String targetFilePath = "result.huf";
         // 频度集路径
-        String fFilePath="getFrequency.txt";
+        String fFilePath = "getFrequency.txt";
         // 解码输出文件路径
-        String outputFilePath="reconstruct.txt";
+        String outputFilePath = "reconstruct.txt";
 
-        Map<Character, Integer> getFrequency = new HashMap<>();
-        getFrequency = GetFrequency.getFrequency(filePath);
+        Map<Character, Integer> frequencyTable = FrequencyHandler.getFrequency(filePath);
 
         HuffmanTree huffmanTree = new HuffmanTree();
-        huffmanTree.Store(getFrequency);
+        huffmanTree.Store(frequencyTable);
         Map<Character, String> codeTable = huffmanTree.getCodeTable();
 
-        while(true) {
+        while (true) {
             //用户界面：
             System.out.println("--------------------欢迎使用huffman编码器---------------------");
             System.out.println("操作命令说明：");
@@ -39,33 +37,33 @@ public class Main {
             System.out.println("请输入命令：");
             choice = sc.nextInt();
 
-            switch(choice) {
+            switch (choice) {
                 //初级要求：
                 case 1:
                     //把频度集打印在终端上
-                    for(Map.Entry<Character, Integer> entry : getFrequency.entrySet()) {
+                    for (Map.Entry<Character, Integer> entry : frequencyTable.entrySet()) {
                         System.out.println("Character:" + entry.getKey() + ", Frequency:" + entry.getValue());
                     }
 
                     System.out.println("-------------------------------");
                     // 把codeTable打印在终端上
-                    for(Map.Entry<Character, String> entry : codeTable.entrySet()) {
+                    for (Map.Entry<Character, String> entry : codeTable.entrySet()) {
                         System.out.println("Character:" + entry.getKey() + ", Code:" + entry.getValue());
                     }
 
                     // 调用静态方法将频度集写入文件getFrequency.txt
-                    GetFrequency.writeMapToFile(getFrequency, "getFrequency.txt");
+                    FrequencyHandler.writeMapToFile(frequencyTable, "getFrequency.txt");
                     // 调用静态方法将码字集写入文件getCode.txt
-                    HuffmanTree.writeMapToFile(codeTable,"getCode.txt");
+                    HuffmanTree.writeMapToFile(codeTable, "getCode.txt");
 
                     break;
                 //中级要求:
                 case 2:
-                    FileCoder.encodeFile(filePath,targetFilePath,fFilePath,huffmanTree);
+                    FileCoder.encodeFile(filePath, targetFilePath, fFilePath);
                     break;
                 //高级要求
                 case 3:
-                    FileCoder.decodeFile(outputFilePath,targetFilePath,fFilePath,huffmanTree);
+                    FileCoder.decodeFile(outputFilePath, targetFilePath, fFilePath);
                     break;
                 case 4:
                     System.exit(0);
