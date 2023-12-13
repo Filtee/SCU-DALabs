@@ -8,14 +8,14 @@ import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class GetFrequencyTest {
+class FrequencyHandlerTest {
     @Test
     void getFrequency() throws IOException {
 
         String filePath = "./test/java/resources/f1.txt";
         Map<Character,Integer> charFrequency = new HashMap<>();
 
-        charFrequency = GetFrequency.getFrequency(filePath);
+        charFrequency = FrequencyHandler.getFrequency(filePath);
 
         Map<Character,Integer> expected = new HashMap<>();
         expected.put('A',7);

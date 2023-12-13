@@ -14,6 +14,11 @@ public class HuffmanTree {
         this.codeTable = new HashMap<>();
     }
 
+    public HuffmanTree(Map<Character, Integer> frequencyTable) {
+        this.codeTable = new HashMap<>();
+        Store(frequencyTable);
+    }
+
     /**
      * Stores the frequency table into the Huffman tree.
      * Key is the character, value is the frequency.
@@ -33,44 +38,39 @@ public class HuffmanTree {
      * @return the encoded byte
      */
     public byte[] encode(char input) {
-        //对于encode中存在的字符，首先将其编码以string的形式载至code中
-        String code = codeTable.get(input);
-        // 采用byte数组返回值，0号元素为要写入的字节数，1、2号元素为待写入字节
-        // 解决了字符编码过长，output被覆盖漏掉1字节的问题
-        byte[] noutput =new byte[3];
-        int bytecount=0;
-        //遍历code的每一位
-        for (int i = 0; i < code.length(); i++) {
+        byte[] outputBuffer = new byte[8];
+        int bytecount = 0;
 
+        // 遍历code的每一位
+        String code = codeTable.get(input);
+        for (int i = 0; i < code.length(); i++) {
             if (code.charAt(i) == '1') {
-                //如果该位置为1，则将codeByte的对应位设为1
+                // 如果该位置为1，则将codeByte的对应位设为1
                 codeByte |= (byte) (1 << (7 - encodeCount));
             }
 
+            // Check if the code byte is full.
             if (encodeCount == 7 && input != '\0') {
-                // If the code byte is full, return the encoded byte.
-                if(bytecount==0){
-                    noutput[1]=codeByte;
-                    noutput[0]=1;
-                    bytecount++;
-                }else{
-                    noutput[2]=codeByte;
-                    noutput[0]=2;
-                }
+                // If the code byte is full, add the encoded byte into the buffer.
+                outputBuffer[bytecount] = codeByte;
+                bytecount++;
+                // Reset the code byte.
                 codeByte = 0;
                 encodeCount = 0;
             } else if (encodeCount == 7) {
                 // If the current node is the end of the file,
                 // return the encoded byte.
-                noutput[1]=codeByte;
-                noutput[0]=1;
+                outputBuffer[bytecount] = codeByte;
                 break;
             } else {
+                // Move to the next bit.
                 encodeCount++;
             }
         }
 
-        return noutput;
+        byte[] output = new byte[bytecount];
+        System.arraycopy(outputBuffer, 0, output, 0, bytecount);
+        return output;
     }
 
     /**
@@ -83,12 +83,12 @@ public class HuffmanTree {
         String output = "";
         // Traverse the Huffman tree.
         for (int i = 0; i < 8; i++) {
-            //检查byte中每一位的值
+            // 检查byte中每一位的值
             if ((input & (1 << (7 - i))) != 0) {
-                //如果值为1，则移动到当前结点的右子结点
+                // 如果值为1，则移动到当前结点的右子结点
                 curr = curr.right;
             } else {
-                //如果值为0，移动到当前结点的左子结点
+                // 如果值为0，移动到当前结点的左子结点
                 curr = curr.left;
             }
 
@@ -203,7 +203,7 @@ public class HuffmanTree {
         try (BufferedWriter writer2 = new BufferedWriter(new FileWriter(fileName))) {
             // 遍历Map的键值对，将其写入文件
             for (Map.Entry<Character, String> entry : map.entrySet()) {
-                writer2.write(entry.getKey() + "\\" + entry.getValue()+ "\\");
+                writer2.write(entry.getKey() + "\\" + entry.getValue() + "\\");
                 // writer2.newLine();  // 换行
             }
             System.out.println("码字集写入文件成功！");
