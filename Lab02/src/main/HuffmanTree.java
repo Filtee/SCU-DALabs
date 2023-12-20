@@ -121,6 +121,7 @@ public class HuffmanTree {
     /****************************************************************
      *                private methods and properties                *
      ****************************************************************/
+
     class HuffmanNode {
         private final char character;
         private final int frequency;
